@@ -1,3 +1,0 @@
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/CMakeFiles/rebuild_cache.dir
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/CMakeFiles/edit_cache.dir
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/CMakeFiles/Warp.dir
