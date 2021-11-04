@@ -744,6 +744,33 @@ home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSI7021.c.
 	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSI7021.c.s
 .PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSI7021.c.s
 
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.s
+
 home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devTCS34725.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devTCS34725.c.obj
 
 .PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devTCS34725.obj
@@ -1074,6 +1101,9 @@ help:
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSI7021.obj"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSI7021.i"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSI7021.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.s"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devTCS34725.obj"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devTCS34725.i"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devTCS34725.s"
