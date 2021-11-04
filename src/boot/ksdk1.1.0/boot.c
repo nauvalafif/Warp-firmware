@@ -2018,6 +2018,8 @@ main(void)
 		}
 	#endif
 
+	devSSD1331init(); // Call the initialisation code
+
 	while (1)
 	{
 		/*
