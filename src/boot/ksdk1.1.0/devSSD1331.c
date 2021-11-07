@@ -161,14 +161,16 @@ devSSD1331init(void)
 	 *	Any post-initialization drawing commands go here.
 	 */
 	//...
-	writeCommand(0x22);
-	writeCommand(0);
-	writeCommand(0);
-	writeCommand(95);
-	writeCommand(63);
+	writeCommand(0x22); // Draw a rectangle
+	writeCommand(0); // Set the initial column
+	writeCommand(0); // Set the initial row
+	writeCommand(95); // Set the final column
+	writeCommand(63); // Set the final row
+	// Set the outline colour with the brightest green
 	writeCommand(0);
 	writeCommand(255);
 	writeCommand(0);
+	// Set the filled colour with the brightest green
 	writeCommand(0);
     writeCommand(255);
     writeCommand(0);
