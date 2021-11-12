@@ -24,7 +24,7 @@ enum
 {
 	kSSD1331PinMOSI		= GPIO_MAKE_PIN(HW_GPIOA, 8),
 	kSSD1331PinSCK		= GPIO_MAKE_PIN(HW_GPIOA, 9),
-	kSSD1331PinCSn		= GPIO_MAKE_PIN(HW_GPIOB, 11),
+	kSSD1331PinCSn		= GPIO_MAKE_PIN(HW_GPIOB, 10),
 	kSSD1331PinDC		= GPIO_MAKE_PIN(HW_GPIOA, 12),
 	kSSD1331PinRST		= GPIO_MAKE_PIN(HW_GPIOB, 0),
 };
@@ -84,7 +84,7 @@ devSSD1331init(void)
 	 *
 	 *	Reconfigure to use as GPIO.
 	 */
-	PORT_HAL_SetMuxMode(PORTB_BASE, 11u, kPortMuxAsGpio);
+	PORT_HAL_SetMuxMode(PORTB_BASE, 10u, kPortMuxAsGpio);
 	PORT_HAL_SetMuxMode(PORTA_BASE, 12u, kPortMuxAsGpio);
 	PORT_HAL_SetMuxMode(PORTB_BASE, 0u, kPortMuxAsGpio);
 
@@ -161,14 +161,16 @@ devSSD1331init(void)
 	 *	Any post-initialization drawing commands go here.
 	 */
 	//...
-	writeCommand(0x22);
-	writeCommand(0);
-	writeCommand(0);
-	writeCommand(95);
-	writeCommand(63);
+	writeCommand(0x22); // Draw a rectangle
+	writeCommand(0); // Set the initial column
+	writeCommand(0); // Set the initial row
+	writeCommand(95); // Set the final column
+	writeCommand(63); // Set the final row
+	// Set the outline colour with the brightest green
 	writeCommand(0);
 	writeCommand(255);
 	writeCommand(0);
+	// Set the filled colour with the brightest green
 	writeCommand(0);
     writeCommand(255);
     writeCommand(0);
