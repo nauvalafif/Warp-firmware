@@ -126,7 +126,7 @@ enum {
  *  current/power monitor IC
  */
 
-Adafruit_INA219(uint8_t addr = INA219_ADDRESS);
+initINA219(uint8_t addr = INA219_ADDRESS);
 ~Adafruit_INA219();
 bool begin(TwoWire *theWire = &Wire);
 void setCalibration_32V_2A();
