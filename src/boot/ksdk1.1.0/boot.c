@@ -2036,7 +2036,7 @@ main(void)
 
     // Read shunt voltage value
     for (int i=0; i<1000; i++) {
-        warpPrint("%d, ", i+1)
+        warpPrint("%d, ", i+1);
         printShuntVoltageDataINA219(false);
         warpPrint("\n");
     }
