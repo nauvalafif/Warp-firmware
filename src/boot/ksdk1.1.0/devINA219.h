@@ -121,39 +121,46 @@ enum {
 /** calibration register **/
 #define INA219_REG_CALIBRATION (0x05)
 
-/*!
- *   @brief  Class that stores state and functions for interacting with INA219
- *  current/power monitor IC
- */
+///*!
+// *   @brief  Class that stores state and functions for interacting with INA219
+// *  current/power monitor IC
+// */
+//
+//initINA219(uint8_t addr = INA219_ADDRESS);
+//~Adafruit_INA219();
+//bool begin(TwoWire *theWire = &Wire);
+//void setCalibration_32V_2A();
+//void setCalibration_32V_1A();
+//void setCalibration_16V_400mA();
+//float getBusVoltage_V();
+//float getShuntVoltage_mV();
+//float getCurrent_mA();
+//float getPower_mW();
+//void powerSave(bool on);
+//bool success();
+//
+//Adafruit_I2CDevice *i2c_dev = NULL;
+//
+//bool _success;
+//
+//uint8_t ina219_i2caddr = -1;
+//uint32_t ina219_calValue;
+//// The following multipliers are used to convert raw current and power
+//// values to mA and mW, taking into account the current config settings
+//uint32_t ina219_currentDivider_mA;
+//float ina219_powerMultiplier_mW;
+//
+//void init();
+//int16_t getBusVoltage_raw();
+//int16_t getShuntVoltage_raw();
+//int16_t getCurrent_raw();
+//int16_t getPower_raw();
 
-initINA219(uint8_t addr = INA219_ADDRESS);
-~Adafruit_INA219();
-bool begin(TwoWire *theWire = &Wire);
-void setCalibration_32V_2A();
-void setCalibration_32V_1A();
-void setCalibration_16V_400mA();
-float getBusVoltage_V();
-float getShuntVoltage_mV();
-float getCurrent_mA();
-float getPower_mW();
-void powerSave(bool on);
-bool success();
-
-Adafruit_I2CDevice *i2c_dev = NULL;
-
-bool _success;
-
-uint8_t ina219_i2caddr = -1;
-uint32_t ina219_calValue;
-// The following multipliers are used to convert raw current and power
-// values to mA and mW, taking into account the current config settings
-uint32_t ina219_currentDivider_mA;
-float ina219_powerMultiplier_mW;
-
-void init();
-int16_t getBusVoltage_raw();
-int16_t getShuntVoltage_raw();
-int16_t getCurrent_raw();
-int16_t getPower_raw();
+void		initINA219(const uint8_t i2cAddress, uint16_t operatingVoltageMillivolts);
+WarpStatus	readSensorRegisterINA219(uint8_t deviceRegister, int numberOfBytes);
+WarpStatus	writeSensorRegisterINA219(uint8_t deviceRegister,
+                                          uint16_t payloadBtye);
+WarpStatus	calibrateSensorINA219(uint16_t payloadCalibrate);
+void		printSensorDataINA219(bool hexModeFlag);
 
 #endif
