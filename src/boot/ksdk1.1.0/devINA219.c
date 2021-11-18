@@ -22,9 +22,9 @@ extern volatile uint32_t		gWarpI2cTimeoutMilliseconds;
 extern volatile uint32_t		gWarpSupplySettlingDelayMilliseconds;
 
 void
-initINA219(uint16_t operatingVoltageMillivolts)
+initINA219(const uint8_t i2cAddress, uint16_t operatingVoltageMillivolts)
 {
-    deviceINA219State.i2cAddress			= 0x40; // INA219 default I2C address
+    deviceINA219State.i2cAddress			= i2cAddress; // INA219 default I2C address
     deviceINA219State.operatingVoltageMillivolts	= operatingVoltageMillivolts;
 
     return;
@@ -173,59 +173,7 @@ printSensorDataINA219(bool hexModeFlag)
      *	We therefore do 2-byte read transactions, for each of the registers.
      *	We could also improve things by doing a 6-byte read transaction.
      */
-    i2cReadStatus = readSensorRegisterINA219(kWarpSensorOutputRegisterINA219OUT_X_MSB, 2 /* numberOfBytes */);
-    readSensorRegisterValueMSB = deviceINA219State.i2cBuffer[0];
-    readSensorRegisterValueLSB = deviceINA219State.i2cBuffer[1];
-    readSensorRegisterValueCombined = ((readSensorRegisterValueMSB & 0xFF) << 6) | (readSensorRegisterValueLSB >> 2);
-
-    /*
-     *	Sign extend the 14-bit value based on knowledge that upper 2 bit are 0:
-     */
-    readSensorRegisterValueCombined = (readSensorRegisterValueCombined ^ (1 << 13)) - (1 << 13);
-
-    if (i2cReadStatus != kWarpStatusOK)
-    {
-        warpPrint(" ----,");
-    }
-    else
-    {
-        if (hexModeFlag)
-        {
-            warpPrint(" 0x%02x 0x%02x,", readSensorRegisterValueMSB, readSensorRegisterValueLSB);
-        }
-        else
-        {
-            warpPrint(" %d,", readSensorRegisterValueCombined);
-        }
-    }
-
-    i2cReadStatus = readSensorRegisterINA219(kWarpSensorOutputRegisterINA219OUT_Y_MSB, 2 /* numberOfBytes */);
-    readSensorRegisterValueMSB = deviceINA219State.i2cBuffer[0];
-    readSensorRegisterValueLSB = deviceINA219State.i2cBuffer[1];
-    readSensorRegisterValueCombined = ((readSensorRegisterValueMSB & 0xFF) << 6) | (readSensorRegisterValueLSB >> 2);
-
-    /*
-     *	Sign extend the 14-bit value based on knowledge that upper 2 bit are 0:
-     */
-    readSensorRegisterValueCombined = (readSensorRegisterValueCombined ^ (1 << 13)) - (1 << 13);
-
-    if (i2cReadStatus != kWarpStatusOK)
-    {
-        warpPrint(" ----,");
-    }
-    else
-    {
-        if (hexModeFlag)
-        {
-            warpPrint(" 0x%02x 0x%02x,", readSensorRegisterValueMSB, readSensorRegisterValueLSB);
-        }
-        else
-        {
-            warpPrint(" %d,", readSensorRegisterValueCombined);
-        }
-    }
-
-    i2cReadStatus = readSensorRegisterINA219(kWarpSensorOutputRegisterINA219OUT_Z_MSB, 2 /* numberOfBytes */);
+    i2cReadStatus = readSensorRegisterINA219(kWarpSensorOutputRegisterINA219_Current, 2 /* numberOfBytes */);
     readSensorRegisterValueMSB = deviceINA219State.i2cBuffer[0];
     readSensorRegisterValueLSB = deviceINA219State.i2cBuffer[1];
     readSensorRegisterValueCombined = ((readSensorRegisterValueMSB & 0xFF) << 6) | (readSensorRegisterValueLSB >> 2);

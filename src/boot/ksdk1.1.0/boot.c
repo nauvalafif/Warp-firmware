@@ -2022,6 +2022,7 @@ main(void)
 
 	devSSD1331init(); // Call the initialisation code
 
+    initINA219(0x40, 5000);
     writeSensorRegisterINA219(kWarpSensorCalibrationRegisterINA219, 0xA000); // set calibration register to 40960
 
 	return 0;
