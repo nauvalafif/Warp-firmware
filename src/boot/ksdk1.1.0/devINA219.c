@@ -151,7 +151,7 @@ readSensorRegisterINA219(uint8_t deviceRegister, int numberOfBytes)
 }
 
 void
-printSensorDataINA219(bool hexModeFlag)
+printShuntVoltageDataINA219(bool hexModeFlag)
 {
     uint16_t	readSensorRegisterValueLSB;
     uint16_t	readSensorRegisterValueMSB;
@@ -173,7 +173,7 @@ printSensorDataINA219(bool hexModeFlag)
      *	We therefore do 2-byte read transactions, for each of the registers.
      *	We could also improve things by doing a 6-byte read transaction.
      */
-    i2cReadStatus = readSensorRegisterINA219(kWarpSensorOutputRegisterINA219_Current, 2 /* numberOfBytes */);
+    i2cReadStatus = readSensorRegisterINA219(kWarpSensorOutputRegisterINA219_ShuntVoltage, 2 /* numberOfBytes */);
     readSensorRegisterValueMSB = deviceINA219State.i2cBuffer[0];
     readSensorRegisterValueLSB = deviceINA219State.i2cBuffer[1];
     readSensorRegisterValueCombined = ((readSensorRegisterValueMSB & 0xFF) << 6) | (readSensorRegisterValueLSB >> 2);
