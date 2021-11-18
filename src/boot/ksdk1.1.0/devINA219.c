@@ -45,7 +45,7 @@ writeSensorRegisterINA219(uint8_t deviceRegister, uint16_t payload)
     switch (deviceRegister)
     {
         case kWarpSensorConfigurationRegisterINA219:
-        case kWarpSensorCalibrationRegisterINA219
+        case kWarpSensorCalibrationRegisterINA219:
         {
             /* OK */
             break;
