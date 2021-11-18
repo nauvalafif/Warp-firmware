@@ -2024,8 +2024,19 @@ main(void)
 
     initINA219(0x40, 3300);
 
+    // Configure the INA219 to have 40 mV range for better resolution
+    status = writeSensorRegisterINA219(kWarpSensorConfigurationRegisterINA219, 0b0010000110011111); // set calibration register to default value
+    if (status != kWarpStatusOK)
+    {
+        warpPrint("\r\n\tI2C write failed, error %d.\n\n", status);
+    } else
+    {
+        warpPrint("\r\n\tI2C write success with status %d.\n\n", status);
+    }
+
     // Read shunt voltage value
     for (int i=0; i<1000; i++) {
+        warpPrint("%d, ", i+1)
         printShuntVoltageDataINA219(false);
         warpPrint("\n");
     }
