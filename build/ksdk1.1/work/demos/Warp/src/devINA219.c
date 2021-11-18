@@ -111,6 +111,7 @@ readSensorRegisterINA219(uint8_t deviceRegister, int numberOfBytes)
     switch (deviceRegister)
     {
         case kWarpSensorOutputRegisterINA219_Current:
+        case kWarpSensorOutputRegisterINA219_ShuntVoltage;
 
         {
             /* OK */
