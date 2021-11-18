@@ -157,6 +157,8 @@ printShuntVoltageDataINA219(bool hexModeFlag)
     uint16_t	readSensorRegisterValueLSB;
     uint16_t	readSensorRegisterValueMSB;
     int16_t		readSensorRegisterValueCombined;
+    int 		shuntVoltageInMicrovolts;
+    int         currentInMilliAmperes;
     WarpStatus	i2cReadStatus;
 
 
@@ -183,6 +185,8 @@ printShuntVoltageDataINA219(bool hexModeFlag)
      *	Sign extend the 14-bit value based on knowledge that upper 2 bit are 0:
      */
     readSensorRegisterValueCombined = (readSensorRegisterValueCombined ^ (1 << 13)) - (1 << 13);
+    shuntVoltageInMicrovolts = readSensorRegisterValueCombined * 10;
+    currentInMilliAmperes = shuntVoltageInMicrovolts * 10;
 
     if (i2cReadStatus != kWarpStatusOK)
     {
@@ -196,7 +200,7 @@ printShuntVoltageDataINA219(bool hexModeFlag)
         }
         else
         {
-            warpPrint(" %d,", readSensorRegisterValueCombined);
+            warpPrint("reg: %d, shuntVoltage: %d, current: %d,", readSensorRegisterValueCombined, shuntVoltageInMicrovolts, currentInMilliAmperes);
         }
     }
 }
