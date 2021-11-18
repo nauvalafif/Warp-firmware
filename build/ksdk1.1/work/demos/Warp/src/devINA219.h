@@ -161,6 +161,6 @@ WarpStatus	readSensorRegisterINA219(uint8_t deviceRegister, int numberOfBytes);
 WarpStatus	writeSensorRegisterINA219(uint8_t deviceRegister,
                                           uint16_t payloadBtye);
 WarpStatus	calibrateSensorINA219(uint16_t payloadCalibrate);
-void		printSensorDataINA219(bool hexModeFlag);
+void		printShuntVoltageDataINA219(bool hexModeFlag);
 
 #endif
