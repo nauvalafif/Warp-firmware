@@ -501,6 +501,33 @@ home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devHDC1000.c
 	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devHDC1000.c.s
 .PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devHDC1000.c.s
 
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.c.s
+
 home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devIS25xP.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devIS25xP.c.obj
 
 .PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devIS25xP.obj
@@ -1074,6 +1101,9 @@ help:
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devHDC1000.obj"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devHDC1000.i"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devHDC1000.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.s"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devIS25xP.obj"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devIS25xP.i"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devIS25xP.s"
