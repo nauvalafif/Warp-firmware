@@ -2023,8 +2023,16 @@ main(void)
 	devSSD1331init(); // Call the initialisation code
 
     initINA219(0x40, 3300);
-    writeSensorRegisterINA219(kWarpSensorCalibrationRegisterINA219, 0xA000); // set calibration register to 40960
 
+    // Callibration
+    status = writeSensorRegisterINA219(kWarpSensorCalibrationRegisterINA219, 0xA000); // set calibration register to 40960
+    if (status != kWarpStatusOK)
+    {
+        warpPrint("\r\n\tI2C write failed, error %d.\n\n", status);
+    } else
+    {
+        warpPrint("\r\n\tI2C write success with status %d.\n\n", status);
+    }
 	return 0;
 }
 
