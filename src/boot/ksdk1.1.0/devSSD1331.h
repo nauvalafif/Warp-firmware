@@ -62,8 +62,6 @@ int     devSSD1331init(void);
 void    clearScreen();
 void    drawLine(coord_t start, coord_t end, colour_t colour);
 void    drawSquare(int length, uint8_t column, uint8_t row, colour_t colour);
-void    horizontalSegment(coord_t start, colour_t colour);
-void    verticalSegment(coord_t start, colour_t colour);
 void    drawLineShape(char type, uint8_t col, uint8_t row, int length, colour_t colour);
 void    drawCircle(char size, uint8_t originColumn, uint8_t originRow, colour_t colour);
 void    drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colour_t colour);
