@@ -82,7 +82,6 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devCCS811.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devHDC1000.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devICE40.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devIS25xP.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devISL23415.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devL3GD20H.h

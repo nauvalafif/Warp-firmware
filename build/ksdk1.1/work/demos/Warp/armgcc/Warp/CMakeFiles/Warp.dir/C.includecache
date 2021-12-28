@@ -879,8 +879,6 @@ SEGGER_RTT.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.h
 devSSD1331.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.h
-devINA219.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.h
 devADXL362.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devADXL362.h
 devIS25xP.h
@@ -1567,9 +1565,7 @@ warp.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c
 stdint.h
 -
-stdio.h
--
-string.h
+unistd.h
 -
 config.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/config.h
