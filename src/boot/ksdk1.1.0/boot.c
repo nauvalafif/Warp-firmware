@@ -275,7 +275,6 @@ clockManagerCallbackRoutine(clock_notify_struct_t *  notify, void *  callbackDat
 	return result;
 }
 
-
 /*
  *	Override the RTC IRQ handler
  */
@@ -361,8 +360,6 @@ callback0(power_manager_notify_struct_t *  notify, power_manager_callback_data_t
  *	Derived from KSDK power_manager_demo.c <<END
  */
 
-
-
 void
 sleepUntilReset(void)
 {
@@ -381,7 +378,6 @@ sleepUntilReset(void)
 		warpLowPowerSecondsSleep(60, true /* forceAllPinsIntoLowPowerState */);
 	}
 }
-
 
 void
 enableLPUARTpins(void)
@@ -425,7 +421,6 @@ enableLPUARTpins(void)
 	LPUART_DRV_Init(0,(lpuart_state_t *)&lpuartState,(lpuart_user_config_t *)&lpuartUserConfig);
 }
 
-
 void
 disableLPUARTpins(void)
 {
@@ -463,8 +458,6 @@ disableLPUARTpins(void)
 	CLOCK_SYS_DisableLpuartClock(0);
 }
 
-
-
 WarpStatus
 sendBytesToUART(uint8_t *  bytes, size_t nbytes)
 {
@@ -478,8 +471,6 @@ sendBytesToUART(uint8_t *  bytes, size_t nbytes)
 
 	return kWarpStatusOK;
 }
-
-
 
 void
 warpEnableSPIpins(void)
@@ -512,8 +503,6 @@ warpEnableSPIpins(void)
 	SPI_DRV_MasterConfigureBus(0 /* SPI master instance */, (spi_master_user_config_t *)&spiUserConfig, &calculatedBaudRate);
 }
 
-
-
 void
 warpDisableSPIpins(void)
 {
@@ -540,8 +529,6 @@ warpDisableSPIpins(void)
 
 	CLOCK_SYS_DisableSpiClock(0);
 }
-
-
 
 void
 warpDeasserAllSPIchipSelects(void)
@@ -590,8 +577,6 @@ warpDeasserAllSPIchipSelects(void)
 	#endif
 }
 
-
-
 void
 debugPrintSPIsinkBuffer(void)
 {
@@ -601,8 +586,6 @@ debugPrintSPIsinkBuffer(void)
 	}
 	warpPrint("\n");
 }
-
-
 
 void
 warpEnableI2Cpins(void)
@@ -621,8 +604,6 @@ warpEnableI2Cpins(void)
 	I2C_DRV_MasterInit(0 /* I2C instance */, (i2c_master_state_t *)&i2cMasterState);
 }
 
-
-
 void
 warpDisableI2Cpins(void)
 {
@@ -639,7 +620,6 @@ warpDisableI2Cpins(void)
 
 	CLOCK_SYS_DisableI2cClock(0);
 }
-
 
 #if (WARP_BUILD_ENABLE_GLAUX_VARIANT)
 	void
@@ -1042,8 +1022,6 @@ setTPS62740CommonControlLines(uint16_t voltageMillivolts)
 	#endif
 }
 
-
-
 void
 warpScaleSupplyVoltage(uint16_t voltageMillivolts)
 {
@@ -1065,8 +1043,6 @@ warpScaleSupplyVoltage(uint16_t voltageMillivolts)
 	#endif
 }
 
-
-
 void
 warpDisableSupplyVoltage(void)
 {
@@ -1079,7 +1055,6 @@ warpDisableSupplyVoltage(void)
 		OSA_TimeDelay(gWarpSupplySettlingDelayMilliseconds);
 	#endif
 }
-
 
 void
 warpLowPowerSecondsSleep(uint32_t sleepSeconds, bool forceAllPinsIntoLowPowerState)
@@ -1109,7 +1084,6 @@ warpLowPowerSecondsSleep(uint32_t sleepSeconds, bool forceAllPinsIntoLowPowerSta
 	}
 }
 
-
 /*
 void
 printPinDirections(void)
@@ -1128,8 +1102,6 @@ printPinDirections(void)
 	OSA_TimeDelay(100);
 }
 */
-
-
 
 void
 dumpProcessorState(void)
@@ -1152,7 +1124,6 @@ dumpProcessorState(void)
 	warpPrint("\r\tVREF clock: %d\n", CLOCK_SYS_GetVrefGateCmd(0));
 	warpPrint("\r\tTPM clock: %d\n", CLOCK_SYS_GetTpmGateCmd(0));
 }
-
 
 void
 printBootSplash(uint16_t gWarpCurrentSupplyVoltage, uint8_t menuRegisterAddress, WarpPowerManagerCallbackStructure *  powerManagerCallbackStructure)
@@ -2021,30 +1992,11 @@ main(void)
 	#endif
 
 	devSSD1331init(); // Call the initialisation code
-
-    initINA219(0x40, 3300);
-
-    // Configure the INA219 to have 40 mV range for better resolution
-    status = writeSensorRegisterINA219(kWarpSensorConfigurationRegisterINA219, 0b0010000110011111); // set calibration register to default value
-    if (status != kWarpStatusOK)
-    {
-        warpPrint("\r\n\tI2C write failed, error %d.\n\n", status);
-    } else
-    {
-        warpPrint("\r\n\tI2C write success with status %d.\n\n", status);
-    }
-
-    // Read shunt voltage value
-    for (int i=0; i<1000; i++) {
-        warpPrint("%d, ", i+1);
-        printShuntVoltageDataINA219(false);
-        warpPrint("\n");
-    }
+    clearScreen();
+    printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
 
     return 0;
 }
-
-
 
 void
 printAllSensors(bool printHeadersAndCalibration, bool hexModeFlag, int menuDelayBetweenEachRun, bool loopForever)
@@ -2230,7 +2182,6 @@ printAllSensors(bool printHeadersAndCalibration, bool hexModeFlag, int menuDelay
 	} while (loopForever);
 }
 
-
 void
 loopForSensor(	const char *  tagString,
 		WarpStatus  (* readSensorRegisterFunction)(uint8_t deviceRegister, int numberOfBytes),
@@ -2369,8 +2320,6 @@ loopForSensor(	const char *  tagString,
 
 	return;
 }
-
-
 
 void
 repeatRegisterReadForDeviceAndAddress(WarpSensorDevice warpSensorDevice, uint8_t baseAddress, bool autoIncrement, int chunkReadsPerAddress, bool chatty, int spinDelay, int repetitionsPerAddress, uint16_t sssupplyMillivolts, uint16_t adaptiveSssupplyMaxMillivolts, uint8_t referenceByte)
@@ -2882,8 +2831,6 @@ repeatRegisterReadForDeviceAndAddress(WarpSensorDevice warpSensorDevice, uint8_t
 	}
 }
 
-
-
 int
 char2int(int character)
 {
@@ -2905,8 +2852,6 @@ char2int(int character)
 	return 0;
 }
 
-
-
 uint8_t
 readHexByte(void)
 {
@@ -2917,8 +2862,6 @@ readHexByte(void)
 
 	return (char2int(topNybble) << 4) + char2int(bottomNybble);
 }
-
-
 
 int
 read4digits(void)
@@ -2932,8 +2875,6 @@ read4digits(void)
 
 	return (digit1 - '0')*1000 + (digit2 - '0')*100 + (digit3 - '0')*10 + (digit4 - '0');
 }
-
-
 
 WarpStatus
 writeByteToI2cDeviceRegister(uint8_t i2cAddress, bool sendCommandByte, uint8_t commandByte, bool sendPayloadByte, uint8_t payloadByte)
@@ -2962,8 +2903,6 @@ writeByteToI2cDeviceRegister(uint8_t i2cAddress, bool sendCommandByte, uint8_t c
 	return (status == kStatus_I2C_Success ? kWarpStatusOK : kWarpStatusDeviceCommunicationFailed);
 }
 
-
-
 WarpStatus
 writeBytesToSpi(uint8_t *  payloadBytes, int payloadLength)
 {
@@ -2981,8 +2920,6 @@ writeBytesToSpi(uint8_t *  payloadBytes, int payloadLength)
 
 	return (status == kStatus_SPI_Success ? kWarpStatusOK : kWarpStatusCommsError);
 }
-
-
 
 void
 powerupAllSensors(void)
@@ -3006,8 +2943,6 @@ powerupAllSensors(void)
 		warpPrint("\r\tPowerup command failed. BMX055 disabled \n");
 	#endif
 }
-
-
 
 void
 activateAllLowPowerSensorModes(bool verbose)

@@ -1,6 +1,8 @@
 // Credit to Bailey Brookes: https://github.com/BaileyBrookes/Weatherstation
 
 #include <stdint.h>
+#include <stdio.h>
+#include <string.h>
 
 /*
  *	config.h needs to come first
@@ -156,22 +158,7 @@ int devSSD1331init(void)
 	/*
 	 *	Any post-initialization drawing commands go here.
 	 */
-	// Drawing a green screen
-	writeCommand(0x22); // Draw a rectangle
-	writeCommand(0); // Set the initial column
-	writeCommand(0); // Set the initial row
-	writeCommand(95); // Set the final column
-	writeCommand(63); // Set the final row
-	// Set the outline colour with the brightest green
-	writeCommand(0);
-	writeCommand(255);
-	writeCommand(0);
-	// Set the filled colour with the brightest green
-	writeCommand(0);
-    writeCommand(255);
-    writeCommand(0);
-
-	return 0;
+    return 0;
 }
 
 // clears the screen
@@ -494,5 +481,28 @@ void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colo
             drawSquare(3,originColumn + 1, originRow, colour);
             drawSquare(3,originColumn + 1, originRow + 4, colour);
             break;
+    }
+}
+
+void printText(char *text) {
+    colour_t text_colour; 		// For the description text
+    text_colour.red   = 0x35d;
+    text_colour.green = 0x00d;
+    text_colour.blue  = 0x00d;
+
+    int c = 1;
+    int r = 1;
+    for (int i = 0; i < strlen(text); i++) {
+        if (c > 91) {
+            c = 1;
+            r += 8;
+        } else {
+            if (text[i] == ' ') {
+                c += 12
+            } else {
+                drawCharacter(text[i], 1, 1, text_colour);
+                c += 6;
+            }
+        }
     }
 }
