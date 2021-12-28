@@ -1,3 +1,5 @@
+// Credit to Bailey Brookes: https://github.com/BaileyBrookes/Weatherstation
+
 /*
  *	See https://github.com/adafruit/Adafruit-SSD1331-OLED-Driver-Library-for-Arduino for the Arduino driver.
  */
@@ -42,4 +44,25 @@ typedef enum
 	kSSD1331CommandVCOMH		= 0xBE,
 } SSD1331Commands;
 
-int	devSSD1331init(void);
+// Structure to hold the coordinates of an origin, expressed as a typedef
+typedef struct coords {
+
+    uint8_t row;
+    uint8_t column;
+} coord_t;
+
+// Structure to hold the colour of a drawing, expressed as a typedef
+typedef struct colour {
+    uint8_t red;
+    uint8_t green;
+    uint8_t blue;
+} colour_t;
+
+int     devSSD1331init(void);
+void    clearScreen();
+void    drawLine(coord_t start, coord_t end, colour_t colour);
+void    drawSquare(int length, uint8_t column, uint8_t row, colour_t colour);
+void    drawLineShape(char type, uint8_t col, uint8_t row, int length, colour_t colour);
+void    drawCircle(char size, uint8_t originColumn, uint8_t originRow, colour_t colour);
+void    drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colour_t colour);
+void    printText(char *text);

@@ -1567,6 +1567,10 @@ warp.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c
 stdint.h
 -
+stdio.h
+-
+string.h
+-
 config.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/config.h
 fsl_spi_master_driver.h
