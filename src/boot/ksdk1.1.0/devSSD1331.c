@@ -17,6 +17,11 @@
 #include <stdint.h>
 #include <unistd.h>
 
+/*
+ *	config.h needs to come first
+ */
+#include "config.h"
+
 //  API incldues
 #include "fsl_spi_master_driver.h"
 #include "fsl_port_hal.h"
