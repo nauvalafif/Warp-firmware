@@ -62,7 +62,6 @@
 #include "gpio_pins.h"
 #include "SEGGER_RTT.h"
 #include "devSSD1331.h"
-#include "devINA219.h"
 volatile WarpI2CDeviceState			deviceINA219State;
 
 
@@ -1991,9 +1990,24 @@ main(void)
 		}
 	#endif
 
-	devSSD1331init(); // Call the initialisation code
-    clearScreen();
-    printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
+	while (1)
+    {
+        /*
+         *	Do not, e.g., lowPowerPinStates() on each iteration, because we actually
+         *	want to use menu to progressiveley change the machine state with various
+         *	commands.
+         */
+
+        screen1("+21.2", "1034");
+        int i = 0;
+        //for (i; i < i < 10000; i++)
+        //{}
+        clearScreen();
+        screen2("12.3", "45.6");
+        //for (i; i < 10000; i++)
+        //{}
+        clearScreen();
+    }
 
     return 0;
 }
