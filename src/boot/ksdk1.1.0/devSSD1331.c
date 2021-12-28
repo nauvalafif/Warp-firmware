@@ -204,31 +204,31 @@ void drawSquare(int length, uint8_t column, uint8_t row, colour_t colour)
 void drawLineShape(char type, uint8_t column, uint8_t row, int length, colour_t colour)
 {
     coord_t start;
-    start.col = column;
+    start.column = column;
     start.row = row;
     coord_t end;
     switch (type)
     {
         case '-': // Horizontal line going from left to right
-            end.col = column + length - 1;
+            end.column = column + length - 1;
             end.row = row;
             drawLine(start, end, colour);
             break;
 
         case '|': // Vertical line
-            end.col = column;
+            end.column = column;
             end.row = row + length - 1;
             drawLine(start, end, colour);
             break;
 
         case '/': // Diagonal line left to right upwards
-            end.col = column + length - 0x1;
+            end.column = column + length - 0x1;
             end.row = row - length + 0x1;
             drawLine(start, end, colour);
             break;
 
         case 'Y': // Diagonal line left to right downwards
-            end.col = column + length - 0x1;
+            end.column = column + length - 0x1;
             end.row = row + length - 0x1;
             drawLine(start, end, colour);
             break;
@@ -259,8 +259,6 @@ void drawCircle(char size, uint8_t originColumn, uint8_t originRow, colour_t col
 // draws a character
 void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colour_t colour)
 {
-    coord_t lineStart;
-    coord_t lineEnd;
     switch (character)
     {
         case 'a':
@@ -490,15 +488,15 @@ void printText(char *text) {
     text_colour.green = 0x00d;
     text_colour.blue  = 0x00d;
 
-    int c = 1;
-    int r = 1;
+    uint8_t c = 1;
+    uint8_t r = 1;
     for (int i = 0; i < strlen(text); i++) {
         if (c > 91) {
             c = 1;
             r += 8;
         } else {
             if (text[i] == ' ') {
-                c += 12
+                c += 12;
             } else {
                 drawCharacter(text[i], 1, 1, text_colour);
                 c += 6;
