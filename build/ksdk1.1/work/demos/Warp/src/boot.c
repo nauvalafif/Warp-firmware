@@ -1990,6 +1990,8 @@ main(void)
 		}
 	#endif
 
+
+    devSSD1331init();
 	while (1)
     {
         /*
