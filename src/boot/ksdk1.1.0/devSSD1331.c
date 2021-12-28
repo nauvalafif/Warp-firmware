@@ -358,7 +358,6 @@ void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colo
             drawLineShape('|', originColumn    , originRow + 4   , 2, colour);
             break;
 
-            // TODO: Finish the text here
         case 'k':
         case 'K':
             drawLineShape('|', originColumn, originRow    , 7, colour);
@@ -389,80 +388,111 @@ void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colo
             drawLineShape('Y', originColumn + 1, originRow + 2, 3, colour);
             break;
 
-            // TODO: Finish the remaining chars
         case 'o':
         case 'O':
+            drawLineShape('|', originColumn, originRow + 1, 5, colour);
+            drawLineShape('|', originColumn + 4, originRow + 1, 5, colour);
+            drawLineShape('-', originColumn + 1, originRow, 3, colour);
+            drawLineShape('-', originColumn + 1, originRow + 6, 3, colour);
             break;
 
         case 'p':
         case 'P':
-            drawLineShape('|', originColumn    , originRow    , 6, colour);
-            drawCircle   ('S', originColumn + 2, originRow + 2,    colour);
+            drawLineShape('|', originColumn, originRow, 7, colour);
+            drawLineShape('|', originColumn + 4, originRow + 1, 2, colour);
+            drawLineShape('-', originColumn + 1, originRow, 3, colour);
+            drawLineShape('-', originColumn + 1, originRow + 3, 3, colour);
             break;
 
         case 'q':
         case 'Q':
+            drawLineShape('|', originColumn, originRow + 1, 3, colour);
+            drawLineShape('|', originColumn + 4, originRow + 1, 3, colour);
+            drawLineShape('-', originColumn + 1, originRow, 3, colour);
+            drawLineShape('-', originColumn + 1, originRow + 4, 3, colour);
+            drawLineShape('|', originColumn + 2, originRow + 5, 2, colour);
+            drawLineShape('-', originColumn + 3, originRow + 6, 2, colour);
             break;
 
         case 'r':
         case 'R':
-            drawLineShape('|', originColumn    , originRow    , 6, colour);
-            drawCircle   ('S', originColumn + 2, originRow + 2,    colour);
-            drawLineShape('Y', originColumn + 1, originRow + 3, 4, colour);
+            drawLineShape('|', originColumn, originRow, 7, colour);
+            drawLineShape('|', originColumn + 4, originRow + 1, 2, colour);
+            drawLineShape('-', originColumn + 1, originRow, 3, colour);
+            drawLineShape('-', originColumn + 1, originRow + 3, 3, colour);
+            drawLineShape('-', originColumn + 3, originRow + 6, 2, colour);
+            drawLineShape('Y', originColumn + 1, originRow + 4, 2, colour);
             break;
 
         case 's':
         case 'S':
-            drawLineShape('-', originColumn + 1, originRow    , 3, colour);
-            drawLineShape('-', originColumn + 1, originRow + 3, 2, colour);
-            drawLineShape('-', originColumn    , originRow + 6, 3, colour);
-            drawLineShape('|', originColumn    , originRow + 1, 1, colour);
-            drawLineShape('|', originColumn + 4, originRow + 4, 1, colour);
+            drawLineShape('-', originColumn + 1, originRow, 4, colour);
+            drawLineShape('-', originColumn + 1, originRow + 3, 3, colour);
+            drawLineShape('-', originColumn, originRow + 6, 4, colour);
+            drawLineShape('|', originColumn, originRow + 1, 2, colour);
+            drawLineShape('|', originColumn + 4, originRow + 4, 2, colour);
             break;
 
         case 't':
         case 'T':
-            drawLineShape('-', originColumn    , originRow, 6, colour);
-            drawLineShape('|', originColumn + 3, originRow, 6, colour);
+            drawLineShape('-', originColumn, originRow, 5, colour);
+            drawLineShape('|', originColumn + 2, originRow + 1, 6, colour);
             break;
 
         case 'u':
         case 'U':
-            drawLineShape('|', originColumn    , originRow    , 5, colour);
-            drawLineShape('-', originColumn + 1, originRow + 6, 2, colour);
-            drawLineShape('|', originColumn + 4, originRow    , 5, colour);
+            drawLineShape('|', originColumn, originRow, 6, colour);
+            drawLineShape('-', originColumn + 1, originRow + 6, 3, colour);
+            drawLineShape('|', originColumn + 4, originRow, 6, colour);
             break;
 
         case 'v':
         case 'V':
+            drawLineShape('|', originColumn, originRow, 3, colour);
+            drawLineShape('|', originColumn + 4, originRow, 3, colour);
+            drawLineShape('|', originColumn + 1, originRow + 3, 3, colour);
+            drawLineShape('|', originColumn + 3, originRow + 3, 3, colour);
+            drawLineShape('|', originColumn + 2, originRow + 6, 1, colour);
             break;
 
         case 'w':
         case 'W':
-            drawLineShape('|', originColumn    , originRow    , 6, colour);
-            drawLineShape('Y', originColumn + 2, originRow + 4, 3, colour);
-            drawLineShape('/', originColumn    , originRow + 6, 3, colour);
-            drawLineShape('|', originColumn + 4, originRow    , 6, colour);
+            drawLineShape('|', originColumn, originRow, 6, colour);
+            drawLineShape('|', originColumn + 2, originRow, 6, colour);
+            drawLineShape('|', originColumn + 4, originRow, 6, colour);
+            drawLineShape('|', originColumn + 1, originRow + 6, 1, colour);
+            drawLineShape('|', originColumn + 3, originRow + 6, 1, colour);
             break;
 
         case 'x':
         case 'X':
+            drawLineShape('|', originColumn, originRow, 2, colour);
+            drawLineShape('|', originColumn + 4, originRow, 2, colour);
+            drawLineShape('|', originColumn, originRow + 5, 2, colour);
+            drawLineShape('|', originColumn + 4, originRow + 5, 2, colour);
+            drawLineShape('/', originColumn + 1, originRow + 4, 3, colour);
+            drawLineShape('Y', originColumn + 1, originRow + 2, 3, colour);
             break;
 
         case 'y':
         case 'Y':
-            drawLineShape('Y', originColumn    , originRow    , 4, colour);
-            drawLineShape('/', originColumn + 3, originRow + 3, 4, colour);
-            drawLineShape('|', originColumn + 3, originRow + 3, 3, colour);
+            drawLineShape('Y', originColumn, originRow + 1, 3, colour);
+            drawLineShape('/', originColumn + 2, originRow + 3, 3, colour);
+            drawLineShape('|', originColumn + 2, originRow + 3, 4, colour);
+            drawLineShape('|', originColumn, originRow, 1, colour);
+            drawLineShape('|', originColumn + 4, originRow, 1, colour);
             break;
 
         case 'z':
         case 'Z':
+            drawLineShape('-', originColumn, originRow, 5, colour);
+            drawLineShape('-', originColumn, originRow + 6, 5, colour);
+            drawLineShape('/', originColumn, originRow + 5, 5, colour);
             break;
 
         case ':':
-            drawLineShape('|', originColumn, originRow + 1, 0, colour);
-            drawLineShape('|', originColumn, originRow + 5, 0, colour);
+            drawSquare(3,originColumn + 1, originRow, colour);
+            drawSquare(3,originColumn + 1, originRow + 4, colour);
             break;
     }
 }
