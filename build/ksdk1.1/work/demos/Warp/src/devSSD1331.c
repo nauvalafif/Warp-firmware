@@ -492,16 +492,15 @@ void printText(char *text) {
     uint8_t c = 1;
     uint8_t r = 1;
     for (int i = 0; i < strlen(text); i++) {
-        if (c >= 86) {
-            c = 1;
-            r += 8;
-        } else {
-            if (text[i] == ' ') {
+        if (text[i] == ' ') {
                 c += 12;
-            } else {
+        } else {
+                if (c > 91) {
+                    c = 1;
+                    r += 8;
+                }
                 drawCharacter(text[i], c, r, text_colour);
                 c += 6;
-            }
         }
     }
 }
