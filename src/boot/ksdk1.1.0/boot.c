@@ -1990,10 +1990,9 @@ main(void)
 		}
 	#endif
 
-
     devSSD1331init();
-	while (1)
-    {
+//	while (1)
+//    {
         /*
          *	Do not, e.g., lowPowerPinStates() on each iteration, because we actually
          *	want to use menu to progressiveley change the machine state with various
@@ -2001,15 +2000,15 @@ main(void)
          */
 
         screen1("+21.2", "1034");
-        int i = 0;
+//        int i = 0;
         //for (i; i < i < 10000; i++)
         //{}
-        clearScreen();
-        screen2("12.3", "45.6");
+//        clearScreen();
+//        screen2("12.3", "45.6");
         //for (i; i < 10000; i++)
         //{}
-        clearScreen();
-    }
+//        clearScreen();
+//    }
 
     return 0;
 }
