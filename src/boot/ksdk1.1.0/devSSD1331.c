@@ -493,7 +493,7 @@ void printText(char *text) {
     uint8_t r = 1;
     for (int i = 0; i < strlen(text); i++) {
         if (text[i] == ' ') {
-                c += 12;
+                c += 6;
         } else {
                 if (c > 91) {
                     c = 1;
