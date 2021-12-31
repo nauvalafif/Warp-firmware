@@ -30,7 +30,7 @@ enum
 	kSSD1331PinSCK		= GPIO_MAKE_PIN(HW_GPIOA, 9),
 	kSSD1331PinCSn		= GPIO_MAKE_PIN(HW_GPIOB, 10),
 	kSSD1331PinDC		= GPIO_MAKE_PIN(HW_GPIOA, 12),
-	kSSD1331PinRST		= GPIO_MAKE_PIN(HW_GPIOB, 0),
+	kSSD1331PinRST		= GPIO_MAKE_PIN(HW_GPIOB, 1),
 };
 
 static int writeCommand(uint8_t commandByte)
@@ -87,7 +87,7 @@ int devSSD1331init(void)
 	 */
 	PORT_HAL_SetMuxMode(PORTB_BASE, 10u, kPortMuxAsGpio);
 	PORT_HAL_SetMuxMode(PORTA_BASE, 12u, kPortMuxAsGpio);
-	PORT_HAL_SetMuxMode(PORTB_BASE, 0u, kPortMuxAsGpio);
+	PORT_HAL_SetMuxMode(PORTB_BASE, 1u, kPortMuxAsGpio);
 
 
 	/*
