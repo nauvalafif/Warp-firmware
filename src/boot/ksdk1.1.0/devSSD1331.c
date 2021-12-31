@@ -264,8 +264,8 @@ void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colo
     {
         case 'a':
         case 'A':
-            drawLineShape('|', originColumn, originRow + 2, 4, colour);
-            drawLineShape('|', originColumn + 4, originRow + 2, 4, colour);
+            drawLineShape('|', originColumn, originRow + 2, 5, colour);
+            drawLineShape('|', originColumn + 4, originRow + 2, 5, colour);
             drawLineShape('-', originColumn, originRow + 3, 5, colour);
             drawLineShape('/', originColumn, originRow + 2, 3, colour);
             drawLineShape('Y', originColumn + 2, originRow    , 3, colour);
