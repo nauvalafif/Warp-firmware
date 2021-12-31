@@ -1992,7 +1992,6 @@ main(void)
 	#endif
 
 	devSSD1331init(); // Call the initialisation code
-    clearScreen();
     printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
 
     return 0;

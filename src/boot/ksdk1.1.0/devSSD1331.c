@@ -1,6 +1,7 @@
 // Credit to Bailey Brookes: https://github.com/BaileyBrookes/Weatherstation
 
 #include <stdint.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -484,9 +485,9 @@ void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colo
 
 void printText(char *text) {
     colour_t text_colour; 		// For the description text
-    text_colour.red   = 0x35d;
-    text_colour.green = 0x00d;
-    text_colour.blue  = 0x00d;
+    text_colour.red   = 255;
+    text_colour.green = 255;
+    text_colour.blue  = 255;
 
     uint8_t c = 1;
     uint8_t r = 1;
@@ -498,7 +499,7 @@ void printText(char *text) {
             if (text[i] == ' ') {
                 c += 12;
             } else {
-                drawCharacter(text[i], 1, 1, text_colour);
+                drawCharacter(text[i], c, r, text_colour);
                 c += 6;
             }
         }
