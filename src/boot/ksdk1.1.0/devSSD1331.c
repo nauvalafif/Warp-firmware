@@ -331,7 +331,7 @@ void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colo
 
         case 'i':
         case 'I':
-            drawLineShape('|', originColumn    , originRow    , 7, colour);
+            drawLineShape('|', originColumn + 2, originRow, 7, colour);
             drawLineShape('-', originColumn, originRow    , 5, colour);
             drawLineShape('-', originColumn, originRow + 6    , 5, colour);
             break;
@@ -492,7 +492,7 @@ void printText(char *text) {
     uint8_t c = 1;
     uint8_t r = 1;
     for (int i = 0; i < strlen(text); i++) {
-        if (c > 91) {
+        if (c >= 86) {
             c = 1;
             r += 8;
         } else {
