@@ -32,13 +32,10 @@
 #define BLE_MAX_RESPONSE_SIZE  48
 #define BLE_MAX_AT_CMD_SIZE    100
 
-static uint8_t  _mode;
-static uint8_t  m_rx_buffer[SDEP_MAX_PACKETSIZE];
-static uint8_t  m_tx_buffer[SDEP_MAX_PACKETSIZE];
-static uint8_t  m_tx_count;
-
-#define SPI_CS_ENABLE()   BLE_CS_ClrVal()
-#define SPI_CS_DISABLE()  BLE_CS_SetVal()
+//static uint8_t  _mode;
+//static uint8_t  m_rx_buffer[SDEP_MAX_PACKETSIZE];
+//static uint8_t  m_tx_buffer[SDEP_MAX_PACKETSIZE];
+//static uint8_t  m_tx_count;
 
 #define SPI_IGNORED_BYTE          0xFEu /**< SPI default character. Character clocked out in case of an ignored transaction. */
 #define SPI_OVERREAD_BYTE         0xFFu /**< SPI over-read character. Character clocked out after an over-read of the transmit buffer. */
@@ -128,6 +125,7 @@ bool BLE_sendPacket(uint16_t command, const uint8_t *buf, uint8_t count, uint8_t
 void printReceivedMessage()
 {
     spi_status_t status;
+    uint8_t rx_buffer = 0;
     uint8_t commandByte = 0x10020A00;
     uint8_t commandByteSize = 16;
 
@@ -144,7 +142,7 @@ void printReceivedMessage()
             0	/* master instance */,
             NULL		/* spi_master_user_config_t */,
             (const uint8_t * restrict)&commandByte,
-            (uint8_t * restrict)&m_rx_buffer,
+            (uint8_t * restrict)&rx_buffer,
             commandByteSize		/* transfer size */,
             1000		/* timeout in microseconds (unlike I2C which is ms) */
     );
@@ -154,7 +152,7 @@ void printReceivedMessage()
      */
     GPIO_DRV_SetPinOutput(kSSD1331PinCSn);
 
-    warpPrint("The result in string is %s\n", m_rx_buffer);
-    warpPrint("The result in hex is is %x\n", m_rx_buffer);
+    warpPrint("The result in string is %s\n", rx_buffer);
+    warpPrint("The result in hex is is %x\n", rx_buffer);
 }
 
