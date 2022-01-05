@@ -45,7 +45,7 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT_Conf.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.h \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devMMA8451Q.h
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/config.h:
@@ -138,6 +138,6 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.h:
 
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devINA219.h:
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h:
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devMMA8451Q.h:
