@@ -41,7 +41,7 @@
 #define SPI_OVERREAD_BYTE         0xFFu /**< SPI over-read character. Character clocked out after an over-read of the transmit buffer. */
 #define SPI_DEFAULT_DELAY_MS      1 // Default delay 1 millisecond
 
-static uint8_t rxDummy; /* dummy byte if we do not need the result. Needed to read from SPI register. */
+// static uint8_t rxDummy; /* dummy byte if we do not need the result. Needed to read from SPI register. */
 
 /*
  *	Override Warp firmware's use of these pins and define new aliases.
@@ -174,7 +174,7 @@ void printBLEReceivedMessage(void)
     /*
      *	Drive /CS high
      */
-    GPIO_DRV_SetPinOutput(kSSD1331PinCSn);
+    GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
 
 //    warpPrint("The result in string is %s\n", rx_buffer);
     warpPrint("The result in hex is is %x\n", rx_buffer);
