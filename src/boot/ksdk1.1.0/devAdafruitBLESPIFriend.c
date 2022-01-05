@@ -33,6 +33,7 @@
 #define BLE_MAX_AT_CMD_SIZE    100
 
 static uint8_t  _mode;
+static uint8_t  m_rx_buffer[SDEP_MAX_PACKETSIZE];
 static uint8_t  m_tx_buffer[SDEP_MAX_PACKETSIZE];
 static uint8_t  m_tx_count;
 
@@ -41,7 +42,86 @@ static uint8_t  m_tx_count;
 
 #define SPI_IGNORED_BYTE          0xFEu /**< SPI default character. Character clocked out in case of an ignored transaction. */
 #define SPI_OVERREAD_BYTE         0xFFu /**< SPI over-read character. Character clocked out after an over-read of the transmit buffer. */
-#define SPI_DEFAULT_DELAY_US      50
+#define SPI_DEFAULT_DELAY_MS      1 // Default delay 1 millisecond
 
 static uint8_t rxDummy; /* dummy byte if we do not need the result. Needed to read from SPI register. */
+
+/*
+ *	Override Warp firmware's use of these pins and define new aliases.
+ */
+enum
+{
+    kAdafruitBLESPIFriendPinMISO		= GPIO_MAKE_PIN(HW_GPIOA, 6), // PTA6
+    kAdafruitBLESPIFriendPinMOSI		= GPIO_MAKE_PIN(HW_GPIOA, 7), // PTA7
+    kAdafruitBLESPIFriendPinSCK		    = GPIO_MAKE_PIN(HW_GPIOB, 0), // PTB0
+    kAdafruitBLESPIFriendPinCSn	        = GPIO_MAKE_PIN(HW_GPIOA, 5), // PTA5
+    kAdafruitBLESPIFriendPinIRQ		    = GPIO_MAKE_PIN(HW_GPIOB, 6), // PTB6
+};
+
+static int writeCommand(uint8_t commandByte, uint8_t commandByteSize)
+{
+    spi_status_t status;
+
+    /*
+     *	Drive /CS low.
+     *
+     *	Make sure there is a high-to-low transition by first driving high, delay, then drive low.
+     */
+    GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
+    OSA_TimeDelay(10);
+    GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn);
+
+    status = SPI_DRV_MasterTransferBlocking(
+            0	/* master instance */,
+            NULL		/* spi_master_user_config_t */,
+            (const uint8_t * restrict)&commandByte,
+            (uint8_t * restrict)&m_rx_buffer[0],
+            commandByteSize		/* transfer size */,
+            1000		/* timeout in microseconds (unlike I2C which is ms) */
+            );
+
+    /*
+     *	Drive /CS high
+     */
+    GPIO_DRV_SetPinOutput(kSSD1331PinCSn);
+
+    return status;
+}
+
+bool BLE_sendPacket(uint16_t command, const uint8_t *buf, uint8_t count, uint8_t more_data) {
+    sdepMsgCommand_t msgCmd;
+    bool result;
+
+    /* flush old response before sending the new command */
+    if (more_data == 0) {
+        m_rx_buffer[SDEP_MAX_PACKETSIZE] = 0u;
+    }
+    msgCmd.header.msg_type    = SDEP_MSGTYPE_COMMAND;
+    msgCmd.header.cmd_id_high = command>>8;
+    msgCmd.header.cmd_id_low  = command&0xff;
+    msgCmd.header.length      = count;
+    msgCmd.header.more_data   = (count == SDEP_MAX_PACKETSIZE) ? more_data : 0;
+
+    /* Copy payload */
+    if (buf != NULL && count > 0) {
+        memcpy(msgCmd.payload, buf, count);
+    }
+    GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn); // enable CS
+
+    /* Bluefruit may not be ready */
+    while ((spixfer(msgCmd.header.msg_type)==SPI_IGNORED_BYTE) && !TMOUT1_CounterExpired(timeoutHndl)) {
+        /* Disable & Re-enable CS with a bit of delay for Bluefruit to ready itself */
+        GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn); // disable CS
+        OSA_TimeDelay(SPI_DEFAULT_DELAY_MS);
+        GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn); // enable CS
+    }
+
+    result = !TMOUT1_CounterExpired(timeoutHndl);
+    if (result) {
+        /* transfer the rest of the data */
+        spixferblock((void*)(((uint8_t*)&msgCmd)+1), sizeof(sdepMsgHeader_t)+count-1);
+    }
+    GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn); // disable CS
+    return result;
+}
 

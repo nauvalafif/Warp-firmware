@@ -46,7 +46,6 @@ typedef enum
 
 // Structure to hold the coordinates of an origin, expressed as a typedef
 typedef struct coords {
-
     uint8_t row;
     uint8_t column;
 } coord_t;
