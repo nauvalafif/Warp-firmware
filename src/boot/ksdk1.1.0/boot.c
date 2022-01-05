@@ -62,7 +62,7 @@
 #include "gpio_pins.h"
 #include "SEGGER_RTT.h"
 #include "devSSD1331.h"
-#include "devINA219.h"
+#include "devAdafruitBLESPIFriend.h"
 volatile WarpI2CDeviceState			deviceINA219State;
 
 
@@ -1993,6 +1993,10 @@ main(void)
 
 	devSSD1331init(); // Call the initialisation code
     printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
+
+    while(1) {
+        printReceivedMessage();
+    }
 
     return 0;
 }

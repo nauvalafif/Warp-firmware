@@ -154,6 +154,7 @@ void printReceivedMessage()
      */
     GPIO_DRV_SetPinOutput(kSSD1331PinCSn);
 
-
+    warpPrint("The result in string is %s\n", m_rx_buffer);
+    warpPrint("The result in hex is is %x\n", m_rx_buffer);
 }
 
