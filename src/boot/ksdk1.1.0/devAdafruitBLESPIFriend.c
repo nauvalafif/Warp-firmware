@@ -125,3 +125,35 @@ bool BLE_sendPacket(uint16_t command, const uint8_t *buf, uint8_t count, uint8_t
     return result;
 }
 
+void printReceivedMessage()
+{
+    spi_status_t status;
+    uint8_t commandByte = 0x10020A00;
+    uint8_t commandByteSize = 16;
+
+    /*
+     *	Drive /CS low.
+     *
+     *	Make sure there is a high-to-low transition by first driving high, delay, then drive low.
+     */
+    GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
+    OSA_TimeDelay(10);
+    GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn);
+
+    status = SPI_DRV_MasterTransferBlocking(
+            0	/* master instance */,
+            NULL		/* spi_master_user_config_t */,
+            (const uint8_t * restrict)&commandByte,
+            (uint8_t * restrict)&m_rx_buffer,
+            commandByteSize		/* transfer size */,
+            1000		/* timeout in microseconds (unlike I2C which is ms) */
+    );
+
+    /*
+     *	Drive /CS high
+     */
+    GPIO_DRV_SetPinOutput(kSSD1331PinCSn);
+
+
+}
+
