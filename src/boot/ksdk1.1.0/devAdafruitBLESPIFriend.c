@@ -122,7 +122,7 @@ bool BLE_sendPacket(uint16_t command, const uint8_t *buf, uint8_t count, uint8_t
     return result;
 }
 
-void printReceivedMessage()
+void printBLEReceivedMessage()
 {
     spi_status_t status;
     uint8_t rx_buffer = 0;
@@ -152,7 +152,7 @@ void printReceivedMessage()
      */
     GPIO_DRV_SetPinOutput(kSSD1331PinCSn);
 
-    warpPrint("The result in string is %s\n", rx_buffer);
+//    warpPrint("The result in string is %s\n", rx_buffer);
     warpPrint("The result in hex is is %x\n", rx_buffer);
 }
 

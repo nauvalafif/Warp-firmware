@@ -1995,7 +1995,7 @@ main(void)
     printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
 
     while(1) {
-        printReceivedMessage();
+        printBLEReceivedMessage();
     }
 
     return 0;
