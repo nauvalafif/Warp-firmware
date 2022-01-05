@@ -14,4 +14,5 @@
 //uint8_t BLE_ParseCommand(const unsigned char *cmd, bool *handled, const CLS1_StdIOType *io);
 //void BLE_Init(void);
 
-void printBLEReceivedMessage();
+int devAdafruitBLESPIFriendInit(void);
+void printBLEReceivedMessage(void);

@@ -1992,8 +1992,9 @@ main(void)
 	#endif
 
 	devSSD1331init(); // Call the initialisation code
-    printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
 
+    printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
+    devAdafruitBLESPIFriendInit();
     while(1) {
         printBLEReceivedMessage();
     }
