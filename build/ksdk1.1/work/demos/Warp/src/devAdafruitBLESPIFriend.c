@@ -154,10 +154,10 @@ void printBLEReceivedMessage(void)
     uint8_t commandByte[16];
     uint8_t commandByteSize = 16;
 
-    commandByte[0] = 0x10u;
-    commandByte[1] = 0x02u;
-    commandByte[2] = 0x0Au;
-    commandByte[3] = 0x00u;
+    commandByte[0] = 0x10;
+    commandByte[1] = 0x02;
+    commandByte[2] = 0x0A;
+    commandByte[3] = 0x00;
 
     /*
      *	Drive /CS low.
