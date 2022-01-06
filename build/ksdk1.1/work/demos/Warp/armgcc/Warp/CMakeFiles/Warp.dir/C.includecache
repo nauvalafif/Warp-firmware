@@ -855,6 +855,8 @@ fsl_i2c_master_driver.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_i2c_master_driver.h
 fsl_spi_master_driver.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_master_driver.h
+fsl_spi_hal.h
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_hal.h
 fsl_rtc_driver.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_rtc_driver.h
 fsl_clock_manager.h
@@ -1113,6 +1115,8 @@ fsl_spi_master_driver.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_master_driver.h
 fsl_port_hal.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_port_hal.h
+fsl_spi_hal.h
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_hal.h
 SEGGER_RTT.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.h
 gpio_pins.h
@@ -1125,6 +1129,8 @@ devAdafruitBLESPIFriend.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
+fsl_spi_hal.h
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_hal.h
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devBGX.c
 stdlib.h
