@@ -150,9 +150,14 @@ void printBLEReceivedMessage(void)
 {
     // TODO: Maybe need to utilise IRQ pin
     spi_status_t status;
-    uint8_t rx_buffer = 0;
-    uint8_t commandByte = 0x10020A00;
+    uint8_t rx_buffer[16];
+    uint8_t commandByte[16];
     uint8_t commandByteSize = 16;
+
+    commandByte[0] = 0x10u;
+    commandByte[1] = 0x02u;
+    commandByte[2] = 0x0Au;
+    commandByte[3] = 0x00u;
 
     /*
      *	Drive /CS low.
@@ -165,7 +170,9 @@ void printBLEReceivedMessage(void)
 
     warpEnableSPIpins();
 
-    warpPrint("command byte: %x\n", commandByte);
+    warpPrint("command byte in hex: %x\n", commandByte);
+    warpPrint("command byte in unsigned: %u\n", commandByte);
+    warpPrint("command byte in decimal: %d\n", commandByte);
     status = SPI_DRV_MasterTransferBlocking(
             0	/* master instance */,
             NULL		/* spi_master_user_config_t */,
