@@ -165,7 +165,9 @@ void printBLEReceivedMessage(void)
 
     warpEnableSPIpins();
 
-    warpPrint("command byte: %x\n", commandByte);
+    warpPrint("command byte in hex: %x\n", commandByte);
+    warpPrint("command byte in unsigned: %u\n", commandByte);
+    warpPrint("command byte in decimal: %d\n", commandByte);
     status = SPI_DRV_MasterTransferBlocking(
             0	/* master instance */,
             NULL		/* spi_master_user_config_t */,
