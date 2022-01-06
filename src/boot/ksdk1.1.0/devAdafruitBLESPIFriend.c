@@ -159,7 +159,7 @@ void printBLEReceivedMessage(void)
      *	Make sure there is a high-to-low transition by first driving high, delay, then drive low.
      */
     GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
-    OSA_TimeDelay(10);
+    OSA_TimeDelay(1);
     GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn);
 
     status = SPI_DRV_MasterTransferBlocking(
@@ -176,7 +176,7 @@ void printBLEReceivedMessage(void)
      */
     GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
 
-//    warpPrint("The result in string is %s\n", rx_buffer);
+    warpPrint("The result in string is %s\n", rx_buffer);
     warpPrint("The result in hex is is %x\n", rx_buffer);
 }
 
