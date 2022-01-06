@@ -15,6 +15,7 @@
 
 #include "fsl_spi_master_driver.h"
 #include "fsl_port_hal.h"
+#include "fsl_spi_hal.h"
 
 #include "SEGGER_RTT.h"
 #include "gpio_pins.h"
@@ -162,6 +163,9 @@ void printBLEReceivedMessage(void)
     OSA_TimeDelay(1);
     GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn);
 
+    warpEnableSPIpins();
+
+    warpPrint("command byte: %x\n", commandByte);
     status = SPI_DRV_MasterTransferBlocking(
             0	/* master instance */,
             NULL		/* spi_master_user_config_t */,
@@ -171,6 +175,21 @@ void printBLEReceivedMessage(void)
             1000		/* timeout in microseconds (unlike I2C which is ms) */
     );
 
+    if (status == kStatus_SPI_Success)
+    {
+        warpPrint("SPI DRV Master Transfer Blocking is successful!\n");
+    }
+    else if (status == kStatus_SPI_Busy) {
+        warpPrint("SPI is still busy!\n");
+    }
+    else if (status == kStatus_SPI_Timeout) {
+        warpPrint("SPI DRV Master Transfer Blocking is timeout!\n");
+    }
+    else {
+        warpPrint("SPI DRV Master Transfer Blocking is failed with status %d\n", status);
+    }
+
+    warpDisableSPIpins();
     /*
      *	Drive /CS high
      */
