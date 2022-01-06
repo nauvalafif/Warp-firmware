@@ -1994,11 +1994,11 @@ main(void)
 
 	devSSD1331init(); // Call the initialisation code
 
-    printText("RIDHA NUR RAHMAWATI BIDADARI CANTIK CINTAKU SAYANGKU");
+    printText("INDONESIA RAYA MERDEKA");
     devAdafruitBLESPIFriendInit();
-    while(1) {
+//    while(1) {
         printBLEReceivedMessage();
-    }
+//    }
 
     return 0;
 }
