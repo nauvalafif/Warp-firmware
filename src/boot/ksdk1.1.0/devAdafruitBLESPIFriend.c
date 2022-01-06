@@ -151,7 +151,7 @@ void printBLEReceivedMessage(void)
     // TODO: Maybe need to utilise IRQ pin
     spi_status_t status;
     uint8_t rx_buffer[16];
-    uint8_t commandByte[16] = 0x10020A00;
+    uint8_t commandByte[16];
     uint8_t commandByteSize = 16;
 
     commandByte[0] = 0x10u;
