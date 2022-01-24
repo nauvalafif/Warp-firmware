@@ -145,8 +145,8 @@ int devAdafruitBLESPIFriendInit(void)
     PORT_HAL_SetMuxMode(PORTA_BASE, 5u, kPortMuxAsGpio); // nCS
     PORT_HAL_SetMuxMode(PORTB_BASE, 6u, kPortMuxAsGpio); // IRQ
 
-    PORT_HAL_SetPinIntMode(PORTA_BASE, 6u, KIntLogicOne);
-    PORTA_IRQHandler();
+    PORT_HAL_SetPinIntMode(PORTB_BASE, 6u, kPortIntLogicOne);
+    // PORTA_IRQHandler();
 
     return 0;
 }
@@ -164,6 +164,11 @@ void printBLEReceivedMessage(void)
     commandByte[2] = 0x0A;
     commandByte[3] = 0x00;
 
+    // Try to print commandByte value
+    warpPrint("command byte in hex: %x\n", commandByte);
+    warpPrint("command byte in unsigned: %u\n", commandByte);
+    warpPrint("command byte in decimal: %d\n", commandByte);
+
     /*
      *	Drive /CS low.
      *
@@ -174,10 +179,6 @@ void printBLEReceivedMessage(void)
     GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn);
 
     warpEnableSPIpins();
-
-    warpPrint("command byte in hex: %x\n", commandByte);
-    warpPrint("command byte in unsigned: %u\n", commandByte);
-    warpPrint("command byte in decimal: %d\n", commandByte);
     status = SPI_DRV_MasterTransferBlocking(
             0	/* master instance */,
             NULL		/* spi_master_user_config_t */,
