@@ -165,9 +165,12 @@ void printBLEReceivedMessage(void)
     commandByte[3] = 0x00;
 
     // Try to print commandByte value
-    warpPrint("command byte in hex: %x\n", commandByte);
-    warpPrint("command byte in unsigned: %u\n", commandByte);
-    warpPrint("command byte in decimal: %d\n", commandByte);
+    warpPrint("commandByte[0] in hex: %x\n", commandByte[0]);
+    warpPrint("commandByte[0] in unsigned: %u\n", commandByte[0]);
+    warpPrint("commandByte[0] in decimal: %d\n", commandByte[0]);
+    warpPrint("commandByte in hex: %x\n", commandByte);
+    warpPrint("commandByte in unsigned: %u\n", commandByte);
+    warpPrint("commandByte in decimal: %d\n", commandByte);
 
     /*
      *	Drive /CS low.
