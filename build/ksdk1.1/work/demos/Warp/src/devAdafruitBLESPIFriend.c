@@ -155,22 +155,16 @@ void printBLEReceivedMessage(void)
 {
     // TODO: Maybe need to utilise IRQ pin
     spi_status_t status;
-    uint8_t rx_buffer[16];
-    uint8_t commandByte[16];
-    uint8_t commandByteSize = 16;
+    size_t commandByteSize = 20;
+    uint8_t rx_buffer[commandByteSize];
+    uint8_t commandByte[commandByteSize];
+    int i, j;
+    // size_t response;
 
     commandByte[0] = 0x10;
     commandByte[1] = 0x02;
     commandByte[2] = 0x0A;
     commandByte[3] = 0x00;
-
-    // Try to print commandByte value
-    warpPrint("commandByte[0] in hex: %x\n", commandByte[0]);
-    warpPrint("commandByte[0] in unsigned: %u\n", commandByte[0]);
-    warpPrint("commandByte[0] in decimal: %d\n", commandByte[0]);
-    warpPrint("commandByte in hex: %x\n", commandByte);
-    warpPrint("commandByte in unsigned: %u\n", commandByte);
-    warpPrint("commandByte in decimal: %d\n", commandByte);
 
     /*
      *	Drive /CS low.
@@ -211,7 +205,15 @@ void printBLEReceivedMessage(void)
      */
     GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
 
-    warpPrint("The result in string is %s\n", rx_buffer);
-    warpPrint("The result in hex is is %x\n", rx_buffer);
+    warpPrint("The result in hex is is: ");
+    for (i = 0; i<commandByteSize; i++) {
+        warpPrint("%x", rx_buffer[i]);
+    }
+    warpPrint("\n");
+
+    warpPrint("The result in string is is: ");
+    for (j = 0; j<commandByteSize; j++) {
+        warpPrint("%s", rx_buffer[j]);
+    }
 }
 
