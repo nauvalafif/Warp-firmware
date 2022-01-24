@@ -16,6 +16,7 @@
 #include "fsl_spi_master_driver.h"
 #include "fsl_port_hal.h"
 #include "fsl_spi_hal.h"
+#include "fsl_gpio_driver.h"
 
 #include "SEGGER_RTT.h"
 #include "gpio_pins.h"
@@ -130,9 +131,9 @@ int devAdafruitBLESPIFriendInit(void)
      *
      *
      */
-    PORT_HAL_SetMuxMode(PORTA_BASE, 6u, kPortMuxAlt3);
-    PORT_HAL_SetMuxMode(PORTA_BASE, 7u, kPortMuxAlt3);
-    PORT_HAL_SetMuxMode(PORTB_BASE, 0u, kPortMuxAlt3);
+    PORT_HAL_SetMuxMode(PORTA_BASE, 6u, kPortMuxAlt3); // MISO
+    PORT_HAL_SetMuxMode(PORTA_BASE, 7u, kPortMuxAlt3); // MOSI
+    PORT_HAL_SetMuxMode(PORTB_BASE, 0u, kPortMuxAlt3); // SCK
 
     warpEnableSPIpins();
 
@@ -141,8 +142,12 @@ int devAdafruitBLESPIFriendInit(void)
      *
      *	Reconfigure to use as GPIO.
      */
-    PORT_HAL_SetMuxMode(PORTA_BASE, 5u, kPortMuxAsGpio);
-    PORT_HAL_SetMuxMode(PORTB_BASE, 6u, kPortMuxAsGpio);
+    PORT_HAL_SetMuxMode(PORTA_BASE, 5u, kPortMuxAsGpio); // nCS
+    PORT_HAL_SetMuxMode(PORTB_BASE, 6u, kPortMuxAsGpio); // IRQ
+
+    PORT_HAL_SetPinIntMode(PORTB_BASE, 6u, kPortIntLogicOne);
+    // PORTA_IRQHandler();
+
     return 0;
 }
 
@@ -159,6 +164,11 @@ void printBLEReceivedMessage(void)
     commandByte[2] = 0x0A;
     commandByte[3] = 0x00;
 
+    // Try to print commandByte value
+    warpPrint("command byte in hex: %x\n", commandByte);
+    warpPrint("command byte in unsigned: %u\n", commandByte);
+    warpPrint("command byte in decimal: %d\n", commandByte);
+
     /*
      *	Drive /CS low.
      *
@@ -169,10 +179,6 @@ void printBLEReceivedMessage(void)
     GPIO_DRV_ClearPinOutput(kAdafruitBLESPIFriendPinCSn);
 
     warpEnableSPIpins();
-
-    warpPrint("command byte in hex: %x\n", commandByte);
-    warpPrint("command byte in unsigned: %u\n", commandByte);
-    warpPrint("command byte in decimal: %d\n", commandByte);
     status = SPI_DRV_MasterTransferBlocking(
             0	/* master instance */,
             NULL		/* spi_master_user_config_t */,

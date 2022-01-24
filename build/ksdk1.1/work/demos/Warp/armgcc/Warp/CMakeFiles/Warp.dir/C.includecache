@@ -1117,6 +1117,8 @@ fsl_port_hal.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_port_hal.h
 fsl_spi_hal.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_hal.h
+fsl_gpio_driver.h
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_gpio_driver.h
 SEGGER_RTT.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.h
 gpio_pins.h
