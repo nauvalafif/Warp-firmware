@@ -157,7 +157,7 @@ void printBLEReceivedMessage(void)
     spi_status_t status;
     size_t commandByteSize = 20;
     uint8_t rx_buffer[commandByteSize];
-    uint8_t commandByte[commandByteSize;
+    uint8_t commandByte[commandByteSize];
     int i, j;
     // size_t response;
 
