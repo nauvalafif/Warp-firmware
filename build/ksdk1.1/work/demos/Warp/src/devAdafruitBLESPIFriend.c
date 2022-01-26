@@ -124,6 +124,23 @@ enum
 //    return result;
 //}
 
+// convert uint8_t to string, credit to https://stackoverflow.com/questions/27448168/conversion-of-uint8-t-to-a-string-c
+char *convert(uint8_t *a)
+{
+    char* buffer2;
+    int i;
+
+    buffer2 = malloc(9);
+    if (!buffer2)
+        return NULL;
+
+    buffer2[8] = 0;
+    for (i = 0; i <= 7; i++)
+        buffer2[7 - i] = (((*a) >> i) & (0x01)) + '0';
+
+    return buffer2;
+}
+
 int devAdafruitBLESPIFriendInit(void)
 {
     /*
@@ -146,14 +163,13 @@ int devAdafruitBLESPIFriendInit(void)
     PORT_HAL_SetMuxMode(PORTB_BASE, 6u, kPortMuxAsGpio); // IRQ
 
     PORT_HAL_SetPinIntMode(PORTB_BASE, 6u, kPortIntLogicOne);
-    // PORTA_IRQHandler();
+    // PORTB_IRQHandler();
 
     return 0;
 }
 
 void printBLEReceivedMessage(void)
 {
-    // TODO: Maybe need to utilise IRQ pin
     spi_status_t status;
     size_t commandByteSize = 20;
     uint8_t rx_buffer[commandByteSize];
@@ -165,6 +181,12 @@ void printBLEReceivedMessage(void)
     commandByte[1] = 0x02;
     commandByte[2] = 0x0A;
     commandByte[3] = 0x00;
+
+    if (PORT_HAL_IsPinIntPending(PORTB_BASE, 6u)) {
+        warpPrint("Interrupt is detected!\n");
+    } else {
+        warpPrint("Interrupt is not detected!\n");
+    }
 
     /*
      *	Drive /CS low.
@@ -205,15 +227,23 @@ void printBLEReceivedMessage(void)
      */
     GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
 
-    warpPrint("The result in hex is is: ");
+    warpPrint("The result in hex is: ");
     for (i = 0; i<commandByteSize; i++) {
         warpPrint("%x", rx_buffer[i]);
     }
     warpPrint("\n");
 
-    warpPrint("The result in string is is: ");
+    warpPrint("The result in string is: ");
     for (j = 0; j<commandByteSize; j++) {
-        warpPrint("%s", rx_buffer[j]);
+        warpPrint("%s", convert(&rx_buffer[j]));
+    }
+
+    warpPrint("\n");
+
+    if (PORT_HAL_IsPinIntPending(PORTB_BASE, 6u)) {
+        warpPrint("Interrupt is detected!\n");
+    } else {
+        warpPrint("Interrupt is not detected!\n");
     }
 }
 
