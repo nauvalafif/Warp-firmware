@@ -17,3 +17,4 @@
 
 int devAdafruitBLESPIFriendInit(void);
 void printBLEReceivedMessage(void);
+char *convert(uint8_t *a);

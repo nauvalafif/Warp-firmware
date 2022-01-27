@@ -174,6 +174,7 @@ void printBLEReceivedMessage(void)
     size_t commandByteSize = 20;
     uint8_t rx_buffer[commandByteSize];
     uint8_t commandByte[commandByteSize];
+    char *temp;
     int i, j;
     // size_t response;
 
@@ -235,7 +236,8 @@ void printBLEReceivedMessage(void)
 
     warpPrint("The result in string is: ");
     for (j = 0; j<commandByteSize; j++) {
-        warpPrint("%s", convert(&rx_buffer[j]));
+        temp = convert(&rx_buffer[j]);
+        warpPrint("%s", temp);
     }
 
     warpPrint("\n");
