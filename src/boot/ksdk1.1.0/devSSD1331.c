@@ -354,7 +354,7 @@ void drawCharacter(char character, uint8_t originColumn, uint8_t originRow, colo
         case 'l':
         case 'L':
             drawLineShape('|', originColumn, originRow    , 7, colour);
-            drawLineShape('|', originColumn, originRow+6    , 5, colour);
+            drawLineShape('-', originColumn, originRow+6    , 5, colour);
             break;
 
         case 'm':
