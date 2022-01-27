@@ -1993,7 +1993,7 @@ main(void)
 	#endif
 
 	devSSD1331init(); // Call the initialisation code
-    printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT TONIGHT");
+    printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT");
     devAdafruitBLESPIFriendInit();
 //    while(1) {
         printBLEReceivedMessage();
