@@ -235,7 +235,7 @@ void printBLEReceivedMessage(void)
 
     warpPrint("The result in string is: ");
     for (j = 0; j<commandByteSize; j++) {
-        warpPrint("%s", convert(&rx_buffer[j]));
+        warpPrint("%s", &convert(&rx_buffer[j]));
     }
 
     warpPrint("\n");

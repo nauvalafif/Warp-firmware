@@ -1993,8 +1993,7 @@ main(void)
 	#endif
 
 	devSSD1331init(); // Call the initialisation code
-
-    printText("INDONESIA RAYA MERDEKA");
+    printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT TONIGHT");
     devAdafruitBLESPIFriendInit();
 //    while(1) {
         printBLEReceivedMessage();
