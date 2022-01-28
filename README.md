@@ -5,6 +5,8 @@ College: Lucy Cavendish
 
 crsID: mrna2
 
+Link to comparison with the Warp-firmware master: https://github.com/physical-computation/Warp-firmware/compare/master...nauvalafif:coursework5
+
 ## 1.  Firmware
 The firmware is currently all in `src/boot/ksdk1.1.0/`. The main program is in `src/boot/ksdk1.1.0/boot.c`. For firmware for sensors and peripherals that are used in this project, see `src/boot/ksdk1.1.0/devSSD1331.[c,h]` and `src/boot/ksdk1.1.0/devAdafruitBLESPIFriend.[c,h]` 
 
@@ -27,5 +29,5 @@ I have not succeeded in reading the message from BLE module. The [Adafruit Bluef
 ## 6. Complete system photo
 ![img_2.png](img_2.png)
 
-## 5. Future Plan
+## 8. Future Plan
 I plan to do more research on how to read message from BLE particulary on the interrupt and SPI. If I am still not succeded, for the demonstration I plan to utilise J-Link RTT Client to write the message to the display.
