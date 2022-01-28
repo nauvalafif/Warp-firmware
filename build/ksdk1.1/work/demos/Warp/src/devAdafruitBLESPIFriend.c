@@ -163,7 +163,6 @@ int devAdafruitBLESPIFriendInit(void)
     PORT_HAL_SetMuxMode(PORTB_BASE, 6u, kPortMuxAsGpio); // IRQ
 
     PORT_HAL_SetPinIntMode(PORTB_BASE, 6u, kPortIntLogicOne);
-    // PORTB_IRQHandler();
 
     return 0;
 }
@@ -178,10 +177,10 @@ void printBLEReceivedMessage(void)
     int i, j;
 
 // Command for SDEP_CMDTYPE_BLE_UARTRX
-//    commandByte[0] = 0x10;
-//    commandByte[1] = 0x02;
-//    commandByte[2] = 0x0A;
-//    commandByte[3] = 0x00;
+    commandByte[0] = 0x10;
+    commandByte[1] = 0x02;
+    commandByte[2] = 0x0A;
+    commandByte[3] = 0x00;
 
     // Command for SDEP_CMDTYPE_AT_WRAPPER a-t-I
 //    commandByte[0] = 0x10;
@@ -231,24 +230,16 @@ void printBLEReceivedMessage(void)
         warpPrint("SPI DRV Master Transfer Blocking is failed with status %d\n", status);
     }
 
+    GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
     warpDisableSPIpins();
     /*
      *	Drive /CS high
      */
-    GPIO_DRV_SetPinOutput(kAdafruitBLESPIFriendPinCSn);
 
     warpPrint("The result in hex is: ");
     for (i = 0; i<commandByteSize; i++) {
-        warpPrint("%02x\n", rx_buffer[i]);
+        warpPrint("%02x", rx_buffer[i]);
     }
-    warpPrint("\n");
-
-//    warpPrint("The result in string is: ");
-//    for (j = 0; j<commandByteSize; j++) {
-//        temp = convert(&rx_buffer[j]);
-//        warpPrint("%s", temp);
-//    }
-
     warpPrint("\n");
 
     if (PORT_HAL_IsPinIntPending(PORTB_BASE, 6u)) {

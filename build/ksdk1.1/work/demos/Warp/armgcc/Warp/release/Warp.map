@@ -1903,15 +1903,15 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x000000000000465c       0x26 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/errstrsEN.c.obj
                 0x000000000000465c                gWarpEfmt
  .rodata.printBLEReceivedMessage.str1.1
-                0x0000000000004682       0xff CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj
-                                        0x101 (size before relaxing)
+                0x0000000000004682       0xfe CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj
+                                        0x100 (size before relaxing)
  .rodata._DoInit.str1.1
-                0x0000000000004781       0x14 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
+                0x0000000000004780       0x14 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
  .rodata._aV2C.4390
-                0x0000000000004795       0x10 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT_printf.c.obj
+                0x0000000000004794       0x10 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT_printf.c.obj
  .rodata.portGateTable
-                0x00000000000047a5        0x2 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_clock_MKL03Z4.c.obj)
- *fill*         0x00000000000047a7        0x1 
+                0x00000000000047a4        0x2 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_clock_MKL03Z4.c.obj)
+ *fill*         0x00000000000047a6        0x2 
  .rodata.g_i2cBaseAddr
                 0x00000000000047a8        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_i2c_common.c.obj)
                 0x00000000000047a8                g_i2cBaseAddr
