@@ -30,4 +30,4 @@ I have not succeeded in reading the message from BLE module. The [Adafruit Bluef
 ![img_2.png](img_2.png)
 
 ## 7. Future Plan
-I plan to do more research on how to read message from BLE particulary on the interrupt and SPI. If I am still not succeded, for the demonstration I plan to utilise J-Link RTT Client to write the message to the display.
+I plan to do more research on how to read message from BLE particularly on the interrupt and SPI. If I am still not succeded, for the demonstration I plan to utilise J-Link RTT Client to write the message to the display.
