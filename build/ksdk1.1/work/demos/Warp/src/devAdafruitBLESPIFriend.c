@@ -176,12 +176,21 @@ void printBLEReceivedMessage(void)
     uint8_t commandByte[commandByteSize];
     char *temp;
     int i, j;
-    // size_t response;
 
+// Command for SDEP_CMDTYPE_BLE_UARTRX
+//    commandByte[0] = 0x10;
+//    commandByte[1] = 0x02;
+//    commandByte[2] = 0x0A;
+//    commandByte[3] = 0x00;
+
+    // Command for SDEP_CMDTYPE_AT_WRAPPER a-t-I
     commandByte[0] = 0x10;
-    commandByte[1] = 0x02;
+    commandByte[1] = 0x00;
     commandByte[2] = 0x0A;
-    commandByte[3] = 0x00;
+    commandByte[3] = 0x03;
+    commandByte[4] = 0x61; // 'a'
+    commandByte[5] = 0x74; // 't'
+    commandByte[6] = 0x69; // 'i'
 
     if (PORT_HAL_IsPinIntPending(PORTB_BASE, 6u)) {
         warpPrint("Interrupt is detected!\n");
@@ -234,11 +243,11 @@ void printBLEReceivedMessage(void)
     }
     warpPrint("\n");
 
-    warpPrint("The result in string is: ");
-    for (j = 0; j<commandByteSize; j++) {
-        temp = convert(&rx_buffer[j]);
-        warpPrint("%s", temp);
-    }
+//    warpPrint("The result in string is: ");
+//    for (j = 0; j<commandByteSize; j++) {
+//        temp = convert(&rx_buffer[j]);
+//        warpPrint("%s", temp);
+//    }
 
     warpPrint("\n");
 
