@@ -5,6 +5,8 @@ College: Lucy Cavendish
 
 crsID: mrna2
 
+Link to the project: https://github.com/nauvalafif/Warp-firmware/tree/coursework5
+
 Link to comparison with the Warp-firmware master: https://github.com/physical-computation/Warp-firmware/compare/master...nauvalafif:coursework5
 
 ## 1.  Firmware
