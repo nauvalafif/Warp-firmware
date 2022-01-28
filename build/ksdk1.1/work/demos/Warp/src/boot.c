@@ -1998,6 +1998,7 @@ main(void)
 //    while(1) {
         printBLEReceivedMessage();
 //    }
+    debugPrintSPIsinkBuffer();
 
     return 0;
 }
