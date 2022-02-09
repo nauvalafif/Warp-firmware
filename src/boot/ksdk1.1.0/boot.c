@@ -2002,12 +2002,15 @@ main(void)
 }
 
 void readAndPrint() {
-    char tempChar[50];
-    unsigned NumBytes = sizeof(tempChar);
-    NumBytes = SEGGER_RTT_Read(0u, &tempChar[0], NumBytes);
-    if (NumBytes) {
-        warpPrint("%s\n", tempChar);
-    }
+    char tempChar[50], c;
+    unsigned NumBytes;
+    int i = 0;
+    do {
+        NumBytes = SEGGER_RTT_Read(0u, &c, 1u);
+        if (NumBytes) && (c != '/n') {
+            tempChar[i++] = c;
+        }
+    } while (c != '/n')
 }
 
 void
