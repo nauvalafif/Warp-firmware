@@ -2011,6 +2011,7 @@ void readAndPrint() {
             tempChar[i++] = c;
         }
     } while (c != '\n');
+    warpPrint("%s", tempChar);
 }
 
 void
