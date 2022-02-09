@@ -2002,7 +2002,7 @@ main(void)
 }
 
 void readAndPrint() {
-    char tempChar[50], c;
+    char tempChar[50], c = ' ';
     unsigned NumBytes;
     int i = 0;
     do {
