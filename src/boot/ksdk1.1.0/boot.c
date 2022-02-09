@@ -2003,6 +2003,7 @@ main(void)
 
 void readAndPrint() {
     char tempChar[50], c = ' ';
+    memset(tempChar, '\0', sizeof(tempChar));
     unsigned NumBytes;
     int i = 0;
     do {
@@ -2011,7 +2012,8 @@ void readAndPrint() {
             tempChar[i++] = c;
         }
     } while (c != '\n');
-    warpPrint("%s", tempChar);
+    warpPrint("%s\n", tempChar);
+    printText(tempChar);
 }
 
 void
