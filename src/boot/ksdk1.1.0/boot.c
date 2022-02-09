@@ -63,7 +63,6 @@
 #include "gpio_pins.h"
 #include "SEGGER_RTT.h"
 #include "devSSD1331.h"
-#include "devAdafruitBLESPIFriend.h"
 volatile WarpI2CDeviceState			deviceINA219State;
 
 
@@ -1994,13 +1993,21 @@ main(void)
 
 	devSSD1331init(); // Call the initialisation code
     printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT");
-    devAdafruitBLESPIFriendInit();
-//    while(1) {
-        printBLEReceivedMessage();
-//    }
-    debugPrintSPIsinkBuffer();
+    while (1) {
+        readAndPrint();
+    }
+//    debugPrintSPIsinkBuffer();
 
     return 0;
+}
+
+void readAndPrint() {
+    char tempChar[50];
+    unsigned NumBytes = sizeof(tempChar);
+    NumBytes = SEGGER_RTT_Read(0u, &tempChar[0], NumBytes);
+    if (NumBytes) {
+        warpPrint("%s\n", tempChar);
+    }
 }
 
 void
