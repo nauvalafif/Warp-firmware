@@ -2007,10 +2007,10 @@ void readAndPrint() {
     int i = 0;
     do {
         NumBytes = SEGGER_RTT_Read(0u, &c, 1u);
-        if (NumBytes) && (c != '/n') {
+        if (() && (c != '\n')) {
             tempChar[i++] = c;
         }
-    } while (c != '/n');
+    } while (c != '\n');
 }
 
 void
