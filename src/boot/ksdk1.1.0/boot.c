@@ -2010,7 +2010,7 @@ void readAndPrint() {
         if (NumBytes) && (c != '/n') {
             tempChar[i++] = c;
         }
-    } while (c != '/n')
+    } while (c != '/n');
 }
 
 void
