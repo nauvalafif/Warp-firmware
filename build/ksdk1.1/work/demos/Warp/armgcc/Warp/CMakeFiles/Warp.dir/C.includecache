@@ -881,8 +881,6 @@ SEGGER_RTT.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.h
 devSSD1331.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.h
-devAdafruitBLESPIFriend.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
 devADXL362.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devADXL362.h
 devIS25xP.h
@@ -1101,38 +1099,6 @@ devAT45DB.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAT45DB.h
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAT45DB.h
-
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c
-config.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/config.h
-stdint.h
--
-stdio.h
--
-string.h
--
-fsl_spi_master_driver.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_master_driver.h
-fsl_port_hal.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_port_hal.h
-fsl_spi_hal.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_hal.h
-fsl_gpio_driver.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_gpio_driver.h
-SEGGER_RTT.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.h
-gpio_pins.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/gpio_pins.h
-warp.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/warp.h
-sdep.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/sdep.h
-devAdafruitBLESPIFriend.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
-
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
-fsl_spi_hal.h
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/fsl_spi_hal.h
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devBGX.c
 stdlib.h
@@ -1699,10 +1665,6 @@ gpio_pins.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/gpio_pins.h
 devRV8803C7.h
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devRV8803C7.h
-
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/sdep.h
-stdint.h
--
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/warp.h
 fsl_spi_master_driver.h

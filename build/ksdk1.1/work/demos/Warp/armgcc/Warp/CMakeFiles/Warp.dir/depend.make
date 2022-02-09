@@ -76,7 +76,6 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAS7262.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAS7263.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAT45DB.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devBGX.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devBME680.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devBMX055.h
@@ -317,35 +316,6 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAT45DB.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAT45DB.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAT45DB.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/errstrs.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAT45DB.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/warp.h
-
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../boards/Warp/gpio_pins.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/core_cm0plus.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/core_cmFunc.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/core_cmInstr.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/device/MKL03Z4/MKL03Z4.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/device/MKL03Z4/MKL03Z4_features.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/device/MKL03Z4/MKL03Z4_registers.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/device/MKL03Z4/fsl_bitaccess.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/CMSIS/Include/device/fsl_device_registers.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/drivers/inc/fsl_gpio_driver.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/drivers/inc/fsl_spi_master_driver.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/hal/inc/fsl_gpio_hal.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/hal/inc/fsl_port_hal.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/hal/inc/fsl_spi_hal.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/osa/inc/fsl_os_abstraction.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/osa/inc/fsl_os_abstraction_bm.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/osa/inc/fsl_os_abstraction_free_rtos.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/osa/inc/fsl_os_abstraction_mqx.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/osa/inc/fsl_os_abstraction_ucosii.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/osa/inc/fsl_os_abstraction_ucosiii.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: ../../../../platform/startup/MKL03Z4/system_MKL03Z4.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT_Conf.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/config.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/sdep.h
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/warp.h
 
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devBGX.c.obj: ../../../../boards/Warp/gpio_pins.h
 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devBGX.c.obj: ../../../../platform/CMSIS/Include/core_cm0plus.h
