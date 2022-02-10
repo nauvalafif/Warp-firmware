@@ -493,7 +493,6 @@ void printText(char *text) {
     uint8_t r = 1;
 
     clearScreen();
-//    warpEnableSPIpins();
 
     for (int i = 0; i < strlen(text); i++) {
         if (text[i] == ' ') {
@@ -507,6 +506,4 @@ void printText(char *text) {
                 c += 6;
         }
     }
-
-//    warpDisableSPIpins();
 }
