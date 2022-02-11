@@ -23,7 +23,7 @@
 #include "warp.h"
 
 #include "sdep.h"
-#include "devAdafruitBLESPIFriend.h"
+#include "devAdafruitBLEUARTFriend..h"
 
 /* IRQ will be high to indicate data from the module */
 /* CS is low active */

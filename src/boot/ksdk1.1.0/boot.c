@@ -63,7 +63,7 @@
 #include "gpio_pins.h"
 #include "SEGGER_RTT.h"
 #include "devSSD1331.h"
-#include "devAdafruitBLESPIFriend.h"
+#include "devAdafruitBLEUARTFriend..h"
 volatile WarpI2CDeviceState			deviceINA219State;
 
 
