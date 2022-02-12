@@ -1996,11 +1996,16 @@ main(void)
 
 	devSSD1331init(); // Call the initialisation code
     printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT");
-    devAdafruitBLESPIFriendInit();
-//    while(1) {
-        printBLEReceivedMessage();
-//    }
-    debugPrintSPIsinkBuffer();
+    while(1) {
+        enableUARTPins();
+        initBLE();
+        if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
+            for (int i = 0; i<kWarpSizesUartBufferBytes; i++) {
+                warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
+                warpPrint("\n");
+            }
+        }
+    }
 
     return 0;
 }
