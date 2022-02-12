@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "fsl_uart_driver.h"
+#include "fsl_lpuart_driver.h"
 #include "fsl_port_hal.h"
 #include "fsl_gpio_driver.h"
 
@@ -25,7 +25,7 @@ void enableUARTPins(void)
     /*
      *	Enable UART CLOCK. See KSDK13APIRM.pdf page 289
      */
-    CLOCK_SYS_EnableUartClock(0);
+    CLOCK_SYS_EnableLpuartClock(0);
 
     /*
      *	Set UART pin association. See, e.g., page 99 in
@@ -44,15 +44,16 @@ void enableUARTPins(void)
     GPIO_DRV_ClearPinOutput(kWarpPinSPI_MOSI_UART_CTS);
 
     /*
-     *	Initialize UART0. See KSDK13APIRM.pdf page 2674 and 2701
+     *	Initialize UART0.
      */
 
     uartConfig.baudRate = 9600;
-    uartConfig.bitCountPerChar = kUart8BitsPerChar;
-    uartConfig.parityMode = kUartParityDisabled;
-    uartConfig.stopBitCount = kUartOneStopBit;
+    uartConfig.parityMode = kLpuartParityDisabled;
+    uartConfig.stopBitCount = kLpuartOneStopBit;
+    uartConfig.bitCountPerChar = kLpuart8BitsPerChar;
+    uartConfig.clockSource = kClockLpuartSrcMcgIrClk;
 
-    UART_DRV_Init(0, &uartState, &uartConfig);
+    LPUART_DRV_Init(0, &uartState, &uartConfig);
 }
 
 void initBLE(void)
@@ -64,9 +65,9 @@ void initBLE(void)
     uartState.txBuff = (uint8_t *)deviceBLEState.uartTXBuffer;
     uartState.rxBuff = (uint8_t *)deviceBLEState.uartRXBuffer;
 
-    UART_DRV_InstallRxCallback(
+    LPUART_DRV_InstallRxCallback(
             0,						/*	uint32_t instance		*/
-            &uartRxCallback,		/*	uart_rx_callback_t function	*/
+            &uartRxCallback,		/*	lpuart_rx_callback_t function	*/
             (uint8_t *)deviceBLEState.uartRXBuffer,	    /*	uint8_t ∗ rxBuff		*/
             (void *)0, 				/*	void ∗callbackParam		*/
             1						/*	bool alwaysEnableRxIrq		*/

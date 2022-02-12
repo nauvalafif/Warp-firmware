@@ -57,7 +57,6 @@
 #include "fsl_mcglite_hal.h"
 #include "fsl_port_hal.h"
 #include "fsl_lpuart_driver.h"
-#include "fsl_uart_driver.h"
 #include "glaux.h"
 #include "warp.h"
 #include "errstrs.h"
@@ -68,11 +67,9 @@
 
 volatile WarpI2CDeviceState			deviceINA219State;
 
-
 #define							kWarpConstantStringI2cFailure		"\rI2C failed, reg 0x%02x, code %d\n"
 #define							kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
 #define							kWarpConstantStringErrorSanity		"\rSanity check failed!"
-
 
 #if (WARP_BUILD_ENABLE_DEVADXL362)
 	#include "devADXL362.h"
