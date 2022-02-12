@@ -20,6 +20,10 @@
 #include "warp.h"
 #include "devAdafruitBLEUARTFriend.h"
 
+lpuart_user_config_t uartConfig;
+lpuart_state_t uartState;
+WarpUARTDeviceState	deviceBLEState;
+
 void uartRxCallback() {}
 
 void enableUARTPins(void)
