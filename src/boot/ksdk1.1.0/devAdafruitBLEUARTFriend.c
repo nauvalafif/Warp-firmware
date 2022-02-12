@@ -20,6 +20,8 @@
 #include "warp.h"
 #include "devAdafruitBLEUARTFriend.h"
 
+void uartRxCallback() {}
+
 void enableUARTPins(void)
 {
     /*
@@ -73,6 +75,4 @@ void initBLE(void)
             1						/*	bool alwaysEnableRxIrq		*/
             );
 }
-
-void uartRxCallback() {}
 
