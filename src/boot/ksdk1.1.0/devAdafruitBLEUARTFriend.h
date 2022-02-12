@@ -10,8 +10,6 @@
 #include "gpio_pins.h"
 #include "warp.h"
 
-#include "sdep.h"
-
 extern volatile uart_user_config_t uartConfig;
 extern volatile uart_state_t uartState;
 extern volatile WarpUARTDeviceState	deviceBLEState;
