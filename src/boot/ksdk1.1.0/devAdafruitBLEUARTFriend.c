@@ -22,7 +22,7 @@
 
 lpuart_user_config_t uartConfig;
 lpuart_state_t uartState;
-WarpUARTDeviceState	deviceBLEState;
+extern volatile WarpUARTDeviceState	deviceBLEState;
 
 void uartRxCallback() {}
 

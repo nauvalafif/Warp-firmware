@@ -178,8 +178,7 @@ volatile WarpI2CDeviceState			deviceINA219State;
 	#include "devBGX.h"
 	volatile WarpUARTDeviceState			deviceBGXState;
 #endif
-
-
+volatile WarpUARTDeviceState	deviceBLEState;
 volatile i2c_master_state_t				i2cMasterState;
 volatile spi_master_state_t				spiMasterState;
 volatile spi_master_user_config_t			spiUserConfig;
