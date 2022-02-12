@@ -1,8 +1,10 @@
-CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c.obj: \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.c \
+CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLEUARTFriend.c.obj: \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLEUARTFriend.c \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/config.h \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/drivers/inc/fsl_spi_master_driver.h \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_spi_hal.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/drivers/inc/fsl_lpuart_driver.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction_bm.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_lpuart_hal.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/device/fsl_device_registers.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/device/MKL03Z4/MKL03Z4.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/core_cm0plus.h \
@@ -13,8 +15,13 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/device/MKL03Z4/MKL03Z4.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/device/MKL03Z4/fsl_bitaccess.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/device/MKL03Z4/MKL03Z4_features.h \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction.h \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction_bm.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/system/inc/fsl_clock_manager.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_sim_hal.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/../src/sim/MKL03Z4/fsl_sim_hal_MKL03Z4.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/system/inc/../src/clock/MKL03Z4/fsl_clock_MKL03Z4.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_mcglite_hal.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_mcglite_hal_modes.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_mcglite_hal.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_port_hal.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/drivers/inc/fsl_gpio_driver.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_gpio_hal.h \
@@ -22,14 +29,19 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT_Conf.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../boards/Warp/gpio_pins.h \
  /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/warp.h \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/sdep.h \
- /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/drivers/inc/fsl_spi_master_driver.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_spi_hal.h \
+ /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLEUARTFriend.h
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/config.h:
 
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/drivers/inc/fsl_spi_master_driver.h:
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/drivers/inc/fsl_lpuart_driver.h:
 
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_spi_hal.h:
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction_bm.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_lpuart_hal.h:
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/device/fsl_device_registers.h:
 
@@ -51,9 +63,19 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/CMSIS/Include/device/MKL03Z4/MKL03Z4_features.h:
 
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction.h:
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/system/inc/fsl_clock_manager.h:
 
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/osa/inc/fsl_os_abstraction_bm.h:
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_sim_hal.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/../src/sim/MKL03Z4/fsl_sim_hal_MKL03Z4.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/system/inc/../src/clock/MKL03Z4/fsl_clock_MKL03Z4.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_mcglite_hal.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_mcglite_hal_modes.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_mcglite_hal.h:
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_port_hal.h:
 
@@ -69,6 +91,8 @@ CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/W
 
 /home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/warp.h:
 
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/sdep.h:
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/drivers/inc/fsl_spi_master_driver.h:
 
-/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLESPIFriend.h:
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/../../../../platform/hal/inc/fsl_spi_hal.h:
+
+/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devAdafruitBLEUARTFriend.h:

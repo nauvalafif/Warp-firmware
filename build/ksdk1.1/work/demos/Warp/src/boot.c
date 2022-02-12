@@ -63,14 +63,13 @@
 #include "gpio_pins.h"
 #include "SEGGER_RTT.h"
 #include "devSSD1331.h"
-#include "devAdafruitBLESPIFriend.h"
-volatile WarpI2CDeviceState			deviceINA219State;
+#include "devAdafruitBLEUARTFriend.h"
 
+volatile WarpI2CDeviceState			deviceINA219State;
 
 #define							kWarpConstantStringI2cFailure		"\rI2C failed, reg 0x%02x, code %d\n"
 #define							kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
 #define							kWarpConstantStringErrorSanity		"\rSanity check failed!"
-
 
 #if (WARP_BUILD_ENABLE_DEVADXL362)
 	#include "devADXL362.h"
@@ -179,8 +178,7 @@ volatile WarpI2CDeviceState			deviceINA219State;
 	#include "devBGX.h"
 	volatile WarpUARTDeviceState			deviceBGXState;
 #endif
-
-
+volatile WarpUARTDeviceState	deviceBLEState;
 volatile i2c_master_state_t				i2cMasterState;
 volatile spi_master_state_t				spiMasterState;
 volatile spi_master_user_config_t			spiUserConfig;
@@ -1994,11 +1992,16 @@ main(void)
 
 	devSSD1331init(); // Call the initialisation code
     printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT");
-    devAdafruitBLESPIFriendInit();
-//    while(1) {
-        printBLEReceivedMessage();
-//    }
-    debugPrintSPIsinkBuffer();
+    while(1) {
+        enableUARTPins();
+        initBLE();
+        if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
+            for (int i = 0; i<kWarpSizesUartBufferBytes; i++) {
+                warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
+                warpPrint("\n");
+            }
+        }
+    }
 
     return 0;
 }
