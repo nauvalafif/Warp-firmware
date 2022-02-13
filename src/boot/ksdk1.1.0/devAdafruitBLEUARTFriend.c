@@ -80,3 +80,31 @@ void initBLE(void)
             );
 }
 
+void disableUARTpins(void)
+{
+    /*
+     *	LPUART deinit
+     */
+    LPUART_DRV_Deinit(0);
+
+    /*
+     *	Set UART pin association. See, e.g., page 99 in
+     *
+     *		https://www.nxp.com/docs/en/reference-manual/KL03P24M48SF0RM.pdf
+     *
+     *	Setup:
+     *		PTB3/kWarpPinI2C0_SCL_UART_TX for UART TX
+     *		PTB4/kWarpPinI2C0_SCL_UART_RX for UART RX
+     */
+
+    PORT_HAL_SetMuxMode(PORTB_BASE, 3, kPortPinDisabled);
+    PORT_HAL_SetMuxMode(PORTB_BASE, 4, kPortPinDisabled);
+    PORT_HAL_SetMuxMode(PORTA_BASE, 7, kPortMuxAsGpio);
+    GPIO_DRV_ClearPinOutput(kWarpPinSPI_MOSI_UART_CTS);
+
+    /*
+     *	Disable LPUART CLOCK
+    */
+    CLOCK_SYS_DisableLpuartClock(0);
+}
+
