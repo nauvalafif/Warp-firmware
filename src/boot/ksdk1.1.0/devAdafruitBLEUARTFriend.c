@@ -71,13 +71,11 @@ void initBLE(void)
     uartState.txBuff = (uint8_t *)deviceBLEState.uartTXBuffer;
     uartState.rxBuff = (uint8_t *)deviceBLEState.uartRXBuffer;
 
-    LPUART_DRV_InstallRxCallback(
-            0,						/*	uint32_t instance		*/
-            &uartRxCallback,		/*	lpuart_rx_callback_t function	*/
-            (uint8_t *)deviceBLEState.uartRXBuffer,	    /*	uint8_t ∗ rxBuff		*/
-            (void *)0, 				/*	void ∗callbackParam		*/
-            1						/*	bool alwaysEnableRxIrq		*/
-            );
+    lpUARTStatus = LPUART_DRV_ReceiveDataBlocking(0,
+                                   (uint8_t *)deviceBLEState.uartRXBuffer,
+                                   kWarpSizesUartBufferBytes,
+                                   kWarpDefaultUartTimeoutMilliseconds);
+
 }
 
 void disableUARTpins(void)
