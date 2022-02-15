@@ -65,8 +65,6 @@
 #include "devSSD1331.h"
 #include "devAdafruitBLEUARTFriend.h"
 
-volatile WarpI2CDeviceState			deviceINA219State;
-
 #define							kWarpConstantStringI2cFailure		"\rI2C failed, reg 0x%02x, code %d\n"
 #define							kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
 #define							kWarpConstantStringErrorSanity		"\rSanity check failed!"
@@ -178,27 +176,28 @@ volatile WarpI2CDeviceState			deviceINA219State;
 	#include "devBGX.h"
 	volatile WarpUARTDeviceState			deviceBGXState;
 #endif
-volatile WarpUARTDeviceState	deviceBLEState;
-volatile i2c_master_state_t				i2cMasterState;
-volatile spi_master_state_t				spiMasterState;
-volatile spi_master_user_config_t			spiUserConfig;
-volatile lpuart_user_config_t				lpuartUserConfig;
-volatile lpuart_state_t					lpuartState;
+volatile WarpUARTDeviceState	    deviceBLEState;
+volatile i2c_master_state_t			i2cMasterState;
+volatile spi_master_state_t			spiMasterState;
+volatile spi_master_user_config_t	spiUserConfig;
+volatile lpuart_user_config_t		lpuartUserConfig;
+volatile lpuart_state_t				lpuartState;
 
 
-volatile bool						gWarpBooted				= false;
-volatile uint32_t					gWarpI2cBaudRateKbps			= kWarpDefaultI2cBaudRateKbps;
-volatile uint32_t					gWarpUartBaudRateBps			= kWarpDefaultUartBaudRateBps;
-volatile uint32_t					gWarpSpiBaudRateKbps			= kWarpDefaultSpiBaudRateKbps;
-volatile uint32_t					gWarpSleeptimeSeconds			= kWarpDefaultSleeptimeSeconds;
-volatile WarpModeMask					gWarpMode				= kWarpModeDisableAdcOnSleep;
-volatile uint32_t					gWarpI2cTimeoutMilliseconds		= kWarpDefaultI2cTimeoutMilliseconds;
-volatile uint32_t					gWarpSpiTimeoutMicroseconds		= kWarpDefaultSpiTimeoutMicroseconds;
-volatile uint32_t					gWarpUartTimeoutMilliseconds		= kWarpDefaultUartTimeoutMilliseconds;
-volatile uint32_t					gWarpMenuPrintDelayMilliseconds		= kWarpDefaultMenuPrintDelayMilliseconds;
+volatile bool						gWarpBooted				                = false;
+volatile uint32_t					gWarpI2cBaudRateKbps			        = kWarpDefaultI2cBaudRateKbps;
+volatile uint32_t					gWarpUartBaudRateBps			        = kWarpDefaultUartBaudRateBps;
+volatile uint32_t					gWarpSpiBaudRateKbps			        = kWarpDefaultSpiBaudRateKbps;
+volatile uint32_t					gWarpSleeptimeSeconds			        = kWarpDefaultSleeptimeSeconds;
+volatile WarpModeMask				gWarpMode				                = kWarpModeDisableAdcOnSleep;
+volatile uint32_t					gWarpI2cTimeoutMilliseconds		        = kWarpDefaultI2cTimeoutMilliseconds;
+volatile uint32_t					gWarpSpiTimeoutMicroseconds		        = kWarpDefaultSpiTimeoutMicroseconds;
+volatile uint32_t					gWarpUartTimeoutMilliseconds	        = kWarpDefaultUartTimeoutMilliseconds;
+volatile uint32_t					gWarpMenuPrintDelayMilliseconds	        = kWarpDefaultMenuPrintDelayMilliseconds;
 volatile uint32_t					gWarpSupplySettlingDelayMilliseconds	= kWarpDefaultSupplySettlingDelayMilliseconds;
-volatile uint16_t					gWarpCurrentSupplyVoltage		= kWarpDefaultSupplyVoltageMillivolts;
-char							gWarpPrintBuffer[kWarpDefaultPrintBufferSizeBytes];
+volatile uint16_t					gWarpCurrentSupplyVoltage		        = kWarpDefaultSupplyVoltageMillivolts;
+
+char							    gWarpPrintBuffer[kWarpDefaultPrintBufferSizeBytes];
 
 /*
  *	Since only one SPI transaction is ongoing at a time in our implementation
@@ -219,7 +218,7 @@ static void						repeatRegisterReadForDeviceAndAddress(WarpSensorDevice warpSens
 static int						char2int(int character);
 static void						activateAllLowPowerSensorModes(bool verbose);
 static void						powerupAllSensors(void);
-static uint8_t						readHexByte(void);
+static uint8_t					readHexByte(void);
 static int						read4digits(void);
 static void						printAllSensors(bool printHeadersAndCalibration, bool hexModeFlag, int menuDelayBetweenEachRun, bool loopForever);
 
@@ -229,10 +228,7 @@ static void						printAllSensors(bool printHeadersAndCalibration, bool hexModeFl
 WarpStatus						writeByteToI2cDeviceRegister(uint8_t i2cAddress, bool sendCommandByte, uint8_t commandByte, bool sendPayloadByte, uint8_t payloadByte);
 WarpStatus						writeBytesToSpi(uint8_t *  payloadBytes, int payloadLength);
 
-
 void							warpLowPowerSecondsSleep(uint32_t sleepSeconds, bool forceAllPinsIntoLowPowerState);
-
-
 
 /*
  *	Derived from KSDK power_manager_demo.c BEGIN>>>
@@ -2001,6 +1997,7 @@ main(void)
                 warpPrint("\n");
             }
         }
+        disableUARTpins();
     }
 
     return 0;

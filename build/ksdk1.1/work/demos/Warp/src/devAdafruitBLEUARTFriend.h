@@ -4,3 +4,4 @@
 
 void enableUARTPins(void);
 void initBLE(void);
+void disableUARTpins(void);
