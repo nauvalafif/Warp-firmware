@@ -7,6 +7,7 @@
  */
 #include "config.h"
 
+#include <unistd.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
@@ -23,6 +24,7 @@
 lpuart_user_config_t uartConfig;
 lpuart_state_t uartState;
 extern volatile WarpUARTDeviceState	deviceBLEState;
+int i;
 
 void uartRxCallback() {}
 
@@ -106,5 +108,11 @@ void disableUARTpins(void)
      *	Disable LPUART CLOCK
     */
     CLOCK_SYS_DisableLpuartClock(0);
+
+    for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
+        deviceBLEState.uartRXBuffer[i] = kWarpMiscMarkerForAbsentByte;
+    }
+
+    OSA_TimeDelay(10);
 }
 

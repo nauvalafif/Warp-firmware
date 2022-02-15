@@ -1992,10 +1992,11 @@ main(void)
         enableUARTPins();
         initBLE();
         if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
+            warpPrint("Received message: ");
             for (int i = 0; i<kWarpSizesUartBufferBytes; i++) {
                 warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
-                warpPrint("\n");
             }
+            warpPrint("\n");
         }
         disableUARTpins();
     }
