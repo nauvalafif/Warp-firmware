@@ -37,8 +37,8 @@
 
 #define		WARP_BUILD_ENABLE_SEGGER_RTT_PRINTF		1
 #define		WARP_BUILD_BOOT_TO_CSVSTREAM			0
-#define		WARP_BUILD_BOOT_TO_VLPR				1
-#define		WARP_BUILD_DISABLE_SUPPLIES_BY_DEFAULT		0
+#define		WARP_BUILD_BOOT_TO_VLPR				    1
+#define		WARP_BUILD_DISABLE_SUPPLIES_BY_DEFAULT	0
 
 /*
  *	NOTE: The choice of WARP_BUILD_ENABLE_GLAUX_VARIANT is defined via the Makefile build rules.
@@ -58,74 +58,74 @@
  *	Force the required configuration if WARP_BUILD_ENABLE_GLAUX_VARIANT is set
  */
 #if (WARP_BUILD_ENABLE_GLAUX_VARIANT)
-	#define		WARP_BUILD_ENABLE_DEVADXL362		0
-	#define		WARP_BUILD_ENABLE_DEVAMG8834		0
+	#define		WARP_BUILD_ENABLE_DEVADXL362	0
+	#define		WARP_BUILD_ENABLE_DEVAMG8834	0
 	#define		WARP_BUILD_ENABLE_DEVAS7262		0
 	#define		WARP_BUILD_ENABLE_DEVAS7263		0
 	#define		WARP_BUILD_ENABLE_DEVBGX		0
 	#define		WARP_BUILD_ENABLE_DEVBME680		1
 	#define		WARP_BUILD_ENABLE_DEVBMX055		0
 	#define		WARP_BUILD_ENABLE_DEVCCS811		0
-	#define		WARP_BUILD_ENABLE_DEVHDC1000		0
+	#define		WARP_BUILD_ENABLE_DEVHDC1000	0
 	#define		WARP_BUILD_ENABLE_DEVIS25xP		0
-	#define		WARP_BUILD_ENABLE_DEVISL23415		0
+	#define		WARP_BUILD_ENABLE_DEVISL23415	0
 	#define		WARP_BUILD_ENABLE_DEVAT45DB		0
 	#define		WARP_BUILD_ENABLE_DEVICE40		0
-	#define		WARP_BUILD_ENABLE_DEVL3GD20H		0
+	#define		WARP_BUILD_ENABLE_DEVL3GD20H	0
 	#define		WARP_BUILD_ENABLE_DEVLPS25H		0
-	#define		WARP_BUILD_ENABLE_DEVMAG3110		0
-	#define		WARP_BUILD_ENABLE_DEVMMA8451Q		0
-	#define		WARP_BUILD_ENABLE_DEVRV8803C7		1
+	#define		WARP_BUILD_ENABLE_DEVMAG3110	0
+	#define		WARP_BUILD_ENABLE_DEVMMA8451Q	0
+	#define		WARP_BUILD_ENABLE_DEVRV8803C7	1
 	#define		WARP_BUILD_ENABLE_DEVSI4705		0
 	#define		WARP_BUILD_ENABLE_DEVSI7021		0
-	#define		WARP_BUILD_ENABLE_DEVTCS34725		0
+	#define		WARP_BUILD_ENABLE_DEVTCS34725	0
 #elif (WARP_BUILD_ENABLE_FRDMKL03)
-	#define		WARP_BUILD_ENABLE_DEVADXL362		0
-	#define		WARP_BUILD_ENABLE_DEVAMG8834		0
+	#define		WARP_BUILD_ENABLE_DEVADXL362	0
+	#define		WARP_BUILD_ENABLE_DEVAMG8834	0
 	#define		WARP_BUILD_ENABLE_DEVAS7262		0
 	#define		WARP_BUILD_ENABLE_DEVAS7263		0
 	#define		WARP_BUILD_ENABLE_DEVBGX		0
 	#define		WARP_BUILD_ENABLE_DEVBME680		0
 	#define		WARP_BUILD_ENABLE_DEVBMX055		0
 	#define		WARP_BUILD_ENABLE_DEVCCS811		0
-	#define		WARP_BUILD_ENABLE_DEVHDC1000		0
+	#define		WARP_BUILD_ENABLE_DEVHDC1000	0
 	#define		WARP_BUILD_ENABLE_DEVIS25xP		0
-	#define		WARP_BUILD_ENABLE_DEVISL23415		0
+	#define		WARP_BUILD_ENABLE_DEVISL23415	0
 	#define		WARP_BUILD_ENABLE_DEVAT45DB		0
 	#define		WARP_BUILD_ENABLE_DEVICE40		0
-	#define		WARP_BUILD_ENABLE_DEVL3GD20H		0
+	#define		WARP_BUILD_ENABLE_DEVL3GD20H	0
 	#define		WARP_BUILD_ENABLE_DEVLPS25H		0
-	#define		WARP_BUILD_ENABLE_DEVMAG3110		0
-	#define		WARP_BUILD_ENABLE_DEVMMA8451Q		1
-	#define		WARP_BUILD_ENABLE_DEVRV8803C7		0
+	#define		WARP_BUILD_ENABLE_DEVMAG3110	0
+	#define		WARP_BUILD_ENABLE_DEVMMA8451Q	1
+	#define		WARP_BUILD_ENABLE_DEVRV8803C7	0
 	#define		WARP_BUILD_ENABLE_DEVSI4705		0
 	#define		WARP_BUILD_ENABLE_DEVSI7021		0
-	#define		WARP_BUILD_ENABLE_DEVTCS34725		0
+	#define		WARP_BUILD_ENABLE_DEVTCS34725	0
 #else
 	/*
 	 *	Otherwise: Edit these to set which code paths are activated in the firmware compilation
 	 */
-	#define		WARP_BUILD_ENABLE_DEVADXL362		1
-	#define		WARP_BUILD_ENABLE_DEVAMG8834		0
+	#define		WARP_BUILD_ENABLE_DEVADXL362    1
+	#define		WARP_BUILD_ENABLE_DEVAMG8834	0
 	#define		WARP_BUILD_ENABLE_DEVAS7262		0
 	#define		WARP_BUILD_ENABLE_DEVAS7263		0
 	#define		WARP_BUILD_ENABLE_DEVBGX		1
 	#define		WARP_BUILD_ENABLE_DEVBME680		0
 	#define		WARP_BUILD_ENABLE_DEVBMX055		0
 	#define		WARP_BUILD_ENABLE_DEVCCS811		0
-	#define		WARP_BUILD_ENABLE_DEVHDC1000		0
+	#define		WARP_BUILD_ENABLE_DEVHDC1000	0
 	#define		WARP_BUILD_ENABLE_DEVIS25xP		0
-	#define		WARP_BUILD_ENABLE_DEVISL23415		0
+	#define		WARP_BUILD_ENABLE_DEVISL23415	0
 	#define		WARP_BUILD_ENABLE_DEVAT45DB		1
 	#define		WARP_BUILD_ENABLE_DEVICE40		0
-	#define		WARP_BUILD_ENABLE_DEVL3GD20H		0
+	#define		WARP_BUILD_ENABLE_DEVL3GD20H	0
 	#define		WARP_BUILD_ENABLE_DEVLPS25H		0
-	#define		WARP_BUILD_ENABLE_DEVMAG3110		0
-	#define		WARP_BUILD_ENABLE_DEVMMA8451Q		0
-	#define		WARP_BUILD_ENABLE_DEVRV8803C7		0
+	#define		WARP_BUILD_ENABLE_DEVMAG3110	0
+	#define		WARP_BUILD_ENABLE_DEVMMA8451Q	0
+	#define		WARP_BUILD_ENABLE_DEVRV8803C7	0
 	#define		WARP_BUILD_ENABLE_DEVSI4705		0
 	#define		WARP_BUILD_ENABLE_DEVSI7021		0
-	#define		WARP_BUILD_ENABLE_DEVTCS34725		0
+	#define		WARP_BUILD_ENABLE_DEVTCS34725	0
 #endif
 
 typedef enum
@@ -133,9 +133,9 @@ typedef enum
 	/*
 	 *	Speeds
 	 */
-	kWarpDefaultI2cBaudRateKbps				= 200,
-	kWarpDefaultUartBaudRateBps				= 115200,
-	kWarpDefaultSpiBaudRateKbps				= 10000,
+	kWarpDefaultI2cBaudRateKbps	= 200,
+	kWarpDefaultUartBaudRateBps	= 115200,
+	kWarpDefaultSpiBaudRateKbps	= 10000,
 
 	/*
 	 *	Times
@@ -144,27 +144,27 @@ typedef enum
 	kWarpDefaultI2cTimeoutMilliseconds			= 5,
 	kWarpDefaultUartTimeoutMilliseconds			= 1000,
 	kWarpDefaultSpiTimeoutMicroseconds			= 5,
-	kWarpDefaultMenuPrintDelayMilliseconds			= 10,
-	kWarpDefaultSupplySettlingDelayMilliseconds		= 1,
+	kWarpDefaultMenuPrintDelayMilliseconds		= 10,
+	kWarpDefaultSupplySettlingDelayMilliseconds	= 1,
 
 	/*
 	 *	Sizes
 	*/
-	kWarpDefaultPrintBufferSizeBytes			= 64,
-	kWarpMemoryCommonSpiBufferBytes				= 64,
+	kWarpDefaultPrintBufferSizeBytes		= 64,
+	kWarpMemoryCommonSpiBufferBytes			= 64,
 	kWarpSizesI2cBufferBytes				= 4,
 	kWarpSizesSpiBufferBytes				= 7,
-	kWarpSizesUartBufferBytes				= 100,
-	kWarpSizesBME680CalibrationValuesCount			= 41,
+	kWarpSizesUartBufferBytes				= 128,
+	kWarpSizesBME680CalibrationValuesCount	= 41,
 
 	/*
 	 *	Voltages
 	 */
-	kWarpDefaultSupplyVoltageMillivolts			= 1800,
+	kWarpDefaultSupplyVoltageMillivolts			    = 1800,
 	kWarpDefaultSupplyVoltageMillivoltsBGX			= 3300,
-	kWarpDefaultSupplyVoltageMillivoltsBMX055accel		= 1800,
-	kWarpDefaultSupplyVoltageMillivoltsBMX055gyro		= 1800,
-	kWarpDefaultSupplyVoltageMillivoltsBMX055mag		= 1800,
+	kWarpDefaultSupplyVoltageMillivoltsBMX055accel	= 1800,
+	kWarpDefaultSupplyVoltageMillivoltsBMX055gyro	= 1800,
+	kWarpDefaultSupplyVoltageMillivoltsBMX055mag	= 1800,
 	kWarpDefaultSupplyVoltageMillivoltsMMA8451Q		= 1800,
 	kWarpDefaultSupplyVoltageMillivoltsLPS25H		= 1800,
 	kWarpDefaultSupplyVoltageMillivoltsHDC1000		= 1800,
