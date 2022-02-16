@@ -1987,14 +1987,19 @@ main(void)
 	#endif
 
     int i;
-    char textPrinted[kWarpSizesUartBufferBytes];
+    char textPrinted[kWarpSizesUartBufferBytes] = "TEST";
     devSSD1331init(); // Call the initialisation code
+    printText(textPrinted);
     while(1) {
-        memset(textPrinted, '\0', sizeof(textPrinted));
+        memset(textPrinted, '\0', kWarpSizesUartBufferBytes);
         enableUARTPins();
         initBLE();
-        if ((lpUARTStatus = kStatus_LPUART_Success) && (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte)) {
+        if (lpUARTStatus = kStatus_LPUART_Success) {
             warpPrint("LPUART successfully receives message\n");
+        } else {
+            warpPrint("LPUART fails to receive message\n");
+        }
+        if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
             warpPrint("Received message in char: ");
             for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
                 if (deviceBLEState.uartRXBuffer[i] != kWarpMiscMarkerForAbsentByte) {
@@ -2015,8 +2020,6 @@ main(void)
             }
             warpPrint("\n");
             warpPrint("--------------");
-        } else {
-            warpPrint("LPUART fails to receive message\n");
         }
         disableUARTpins();
     }
