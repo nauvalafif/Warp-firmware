@@ -1987,9 +1987,8 @@ main(void)
 	#endif
 
     int i;
-    char textPrinted[kWarpSizesUartBufferBytes] = "TEST";
+    char textPrinted[kWarpSizesUartBufferBytes];
     devSSD1331init(); // Call the initialisation code
-    printText(textPrinted);
     while(1) {
         memset(textPrinted, '\0', kWarpSizesUartBufferBytes);
         enableUARTPins();
