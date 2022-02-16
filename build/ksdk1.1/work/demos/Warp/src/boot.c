@@ -1984,19 +1984,31 @@ main(void)
 			}
 			warpPrint("Should not get here...");
 		}
-	#endif
+    #endif
 
-	devSSD1331init(); // Call the initialisation code
+    int i;
+    devSSD1331init(); // Call the initialisation code
     printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT");
     while(1) {
         enableUARTPins();
         initBLE();
         if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
-            warpPrint("Received message: ");
-            for (int i = 0; i<kWarpSizesUartBufferBytes; i++) {
+            warpPrint("Received message in char: ");
+            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
                 warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
             }
             warpPrint("\n");
+            warpPrint("Received message in int: ");
+            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
+                warpPrint("%d", deviceBLEState.uartRXBuffer[i]);
+            }
+            warpPrint("\n");
+            warpPrint("Received message in hex: ");
+            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
+                warpPrint("%x", deviceBLEState.uartRXBuffer[i]);
+            }
+            warpPrint("\n");
+            warpPrint("--------------");
         }
         disableUARTpins();
     }
