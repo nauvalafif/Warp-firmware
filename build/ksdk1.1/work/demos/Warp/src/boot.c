@@ -1993,7 +1993,7 @@ main(void)
         memset(textPrinted, '\0', sizeof(textPrinted));
         enableUARTPins();
         initBLE();
-        if (lpUARTStatus = kStatus_LPUART_Success && deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
+        if ((lpUARTStatus = kStatus_LPUART_Success) && (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte)) {
             warpPrint("LPUART successfully receives message\n");
             warpPrint("Received message in char: ");
             for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
