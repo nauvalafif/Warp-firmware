@@ -1995,17 +1995,17 @@ main(void)
         if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
             warpPrint("Received message in char: ");
             for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
+                warpPrint("%c-", deviceBLEState.uartRXBuffer[i]);
             }
             warpPrint("\n");
             warpPrint("Received message in int: ");
             for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%d", deviceBLEState.uartRXBuffer[i]);
+                warpPrint("%d-", deviceBLEState.uartRXBuffer[i]);
             }
             warpPrint("\n");
             warpPrint("Received message in hex: ");
             for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%x", deviceBLEState.uartRXBuffer[i]);
+                warpPrint("%x-", deviceBLEState.uartRXBuffer[i]);
             }
             warpPrint("\n");
             warpPrint("--------------");
