@@ -7,6 +7,7 @@
  */
 #include "config.h"
 
+#include <unistd.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
@@ -23,6 +24,7 @@
 lpuart_user_config_t uartConfig;
 lpuart_state_t uartState;
 extern volatile WarpUARTDeviceState	deviceBLEState;
+int i;
 
 void uartRxCallback() {}
 
@@ -64,6 +66,7 @@ void enableUARTPins(void)
 
 void initBLE(void)
 {
+    lpUARTStatus = kWarpMiscMarkerForAbsentByte;
     deviceBLEState.uartRXBuffer[0] = kWarpMiscMarkerForAbsentByte;
     /*
      *	Initialize UART and setup callback function.
@@ -71,13 +74,10 @@ void initBLE(void)
     uartState.txBuff = (uint8_t *)deviceBLEState.uartTXBuffer;
     uartState.rxBuff = (uint8_t *)deviceBLEState.uartRXBuffer;
 
-    LPUART_DRV_InstallRxCallback(
-            0,						/*	uint32_t instance		*/
-            &uartRxCallback,		/*	lpuart_rx_callback_t function	*/
-            (uint8_t *)deviceBLEState.uartRXBuffer,	    /*	uint8_t ∗ rxBuff		*/
-            (void *)0, 				/*	void ∗callbackParam		*/
-            1						/*	bool alwaysEnableRxIrq		*/
-            );
+    lpUARTStatus = LPUART_DRV_ReceiveDataBlocking(0,
+                                   (uint8_t *)deviceBLEState.uartRXBuffer,
+                                   kWarpSizesUartBufferBytes,
+                                   kWarpDefaultUartTimeoutMilliseconds);
 }
 
 void disableUARTpins(void)
@@ -106,5 +106,11 @@ void disableUARTpins(void)
      *	Disable LPUART CLOCK
     */
     CLOCK_SYS_DisableLpuartClock(0);
+
+    for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
+        deviceBLEState.uartRXBuffer[i] = kWarpMiscMarkerForAbsentByte;
+    }
+
+    OSA_TimeDelay(10);
 }
 
