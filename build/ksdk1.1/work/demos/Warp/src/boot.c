@@ -1986,16 +1986,34 @@ main(void)
 		}
 	#endif
 
-	devSSD1331init(); // Call the initialisation code
+    int i;
+    devSSD1331init(); // Call the initialisation code
     printText("DO NOT FORGET TO PUT THE BLUE AND GREEN BINS OUT");
     while(1) {
         enableUARTPins();
         initBLE();
+        if (lpUARTStatus = kStatus_LPUART_Success) {
+            warpPrint("LPUART successfully receives message\n");
+        } else {
+            warpPrint("LPUART fails to receive message\n");
+        }
         if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
-            for (int i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
-                warpPrint("\n");
+            warpPrint("Received message in char: ");
+            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
+                warpPrint("%c-", deviceBLEState.uartRXBuffer[i]);
             }
+            warpPrint("\n");
+            warpPrint("Received message in int: ");
+            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
+                warpPrint("%d-", deviceBLEState.uartRXBuffer[i]);
+            }
+            warpPrint("\n");
+            warpPrint("Received message in hex: ");
+            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
+                warpPrint("%x-", deviceBLEState.uartRXBuffer[i]);
+            }
+            warpPrint("\n");
+            warpPrint("--------------");
         }
         disableUARTpins();
     }
