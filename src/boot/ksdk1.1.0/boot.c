@@ -2080,7 +2080,7 @@ main(void)
     ***************************************************************************
     ***************************************************************************/
     /* Debug message for user */
-    PRINTF("\r\n\r\n---->Demo: Running FlashEraseSector() and FlashVerifySection()...");
+    warpPrint("\r\n\r\n---->Demo: Running FlashEraseSector() and FlashVerifySection()...");
 
     /************************************************************************/
     /* Erase several sectors on upper pflash block where there is no code */
@@ -2186,20 +2186,20 @@ main(void)
       */
       /************************************************************************/
     /* Message to user */
-    PRINTF("\r\n\r\n................ Swapping Flash Blocks! ..........................\r\n");
-    PRINTF("\r\n\r\n---->Application after the last reset...");
+    warpPrint("\r\n\r\n................ Swapping Flash Blocks! ..........................\r\n");
+    warpPrint("\r\n\r\n---->Application after the last reset...");
     print_swap_application_data();
     /* Run Swap */
     flash_ret = flash_swap();
     if (FTFx_OK == flash_ret)
     {
-    PRINTF("\r\n\r\n---->Flash Swap Demo Success!<----");
+    warpPrint("\r\n\r\n---->Flash Swap Demo Success!<----");
     print_swap_application_data();
-    PRINTF("\r\n\r\n---->Application data will swap locations after next reset...");
+    warpPrint("\r\n\r\n---->Application data will swap locations after next reset...");
     }
     else
     {
-          PRINTF("\r\n\r\n....Flash Swap Demo Failed!  Check hardware and/or software!....");
+          warpPrint("\r\n\r\n....Flash Swap Demo Failed!  Check hardware and/or software!....");
           ErrorTrap(flash_ret);
     }
 #else  /* defined(SWAP_M) */
