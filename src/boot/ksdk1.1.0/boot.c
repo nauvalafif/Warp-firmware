@@ -64,10 +64,11 @@
 #include "SEGGER_RTT.h"
 #include "devSSD1331.h"
 #include "devAdafruitBLEUARTFriend.h"
+#include "flash.h"
 
-#define							kWarpConstantStringI2cFailure		"\rI2C failed, reg 0x%02x, code %d\n"
-#define							kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
-#define							kWarpConstantStringErrorSanity		"\rSanity check failed!"
+#define	kWarpConstantStringI2cFailure		    "\rI2C failed, reg 0x%02x, code %d\n"
+#define	kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
+#define	kWarpConstantStringErrorSanity		    "\rSanity check failed!"
 
 #if (WARP_BUILD_ENABLE_DEVADXL362)
 	#include "devADXL362.h"
@@ -1989,38 +1990,38 @@ main(void)
     int i;
     char textPrinted[kWarpSizesUartBufferBytes];
     devSSD1331init(); // Call the initialisation code
-    while(1) {
-        memset(textPrinted, '\0', kWarpSizesUartBufferBytes);
-        enableUARTPins();
-        initBLE();
-        if (lpUARTStatus = kStatus_LPUART_Success) {
-            warpPrint("LPUART successfully receives message\n");
-        } else {
-            warpPrint("LPUART fails to receive message\n");
-        }
-        if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
-            warpPrint("Received message in char: ");
-            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                if (deviceBLEState.uartRXBuffer[i] != kWarpMiscMarkerForAbsentByte) {
-                    warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
-                    textPrinted[i] = deviceBLEState.uartRXBuffer[i];
-                }
-            }
-            warpPrint("\n");
-            printText(textPrinted);
-            warpPrint("Received message in int: ");
-            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%d-", deviceBLEState.uartRXBuffer[i]);
-            }
-            warpPrint("\n");
-            warpPrint("Received message in hex: ");
-            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%x-", deviceBLEState.uartRXBuffer[i]);
-            }
-            warpPrint("\n");
-            warpPrint("--------------");
-        }
-        disableUARTpins();
+
+    /**************************************************************************
+    *                               FlashInit()                               *
+    * Setup flash SSD structure for device and initialize variables           *
+    ***************************************************************************/
+    flash_ret = FlashInit(&flashSSDConfig);
+    if (FTFx_OK != ret)
+    {
+        ErrorTrap(ret);
+    }
+    flash_ret = FlashProgram(&flashSSDConfig, flash_destination, flash_size, \
+                                       program_buffer, g_FlashLaunchCommand);
+    if (FTFx_OK != ret)
+    {
+        ErrorTrap(ret);
+    }
+}
+
+/*********************************************************************
+*
+*  Function Name    : ErrorTrap
+*  Description      : Gets called when an error occurs.
+*  Arguments        : uint32_t
+*  Return Value     :
+*
+*********************************************************************/
+void ErrorTrap(uint32_t ret)
+{
+    warpPrint("\r\n\r\n\r\n\t---- HALTED DUE TO FLASH ERROR! ----");
+    while (1)
+    {
+        ;
     }
 }
 
