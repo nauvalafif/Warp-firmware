@@ -2090,7 +2090,7 @@ main(void)
     while ((flash_destination + (FTFx_PSECTOR_SIZE)) < flash_end)
     {
         flash_size = FTFx_PSECTOR_SIZE;
-       flash_ flash_ret = FlashEraseSector(&flashSSDConfig, flash_destination, flash_size, g_FlashLaunchCommand);
+        flash_ret = FlashEraseSector(&flashSSDConfig, flash_destination, flash_size, g_FlashLaunchCommand);
         if (FTFx_OK != flash_ret)
         {
             ErrorTrap(flash_ret);
