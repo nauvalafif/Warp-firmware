@@ -906,6 +906,843 @@ home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/powermodes.c
 	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/powermodes.c.s
 .PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/powermodes.c.s
 
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c.s
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.obj
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.obj
+
+# target to build an object file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.obj:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.obj
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.obj
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.i: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.i
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.i
+
+# target to preprocess a source file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.i:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.i
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.i
+
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.s: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.s
+
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.s
+
+# target to generate assembly for a file
+home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.s:
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.s
+.PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c.s
+
 home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/i2c/fsl_i2c_irq.obj: home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/i2c/fsl_i2c_irq.c.obj
 
 .PHONY : home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/i2c/fsl_i2c_irq.obj
@@ -1173,6 +2010,99 @@ help:
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/powermodes.obj"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/powermodes.i"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/powermodes.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.s"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.obj"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.i"
+	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.s"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/i2c/fsl_i2c_irq.obj"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/i2c/fsl_i2c_irq.i"
 	@echo "... home/students/mrna2/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/i2c/fsl_i2c_irq.s"

@@ -69,6 +69,7 @@ IF(CMAKE_BUILD_TYPE MATCHES Debug)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/startup/MKL03Z4)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/hal/inc)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/drivers/inc)
+    INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/include)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/system/inc)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../boards/Warp)
 ELSEIF(CMAKE_BUILD_TYPE MATCHES Release)
@@ -79,6 +80,7 @@ ELSEIF(CMAKE_BUILD_TYPE MATCHES Release)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/startup/MKL03Z4)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/hal/inc)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/drivers/inc)
+    INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/include)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../platform/system/inc)
     INCLUDE_DIRECTORIES(${ProjDirPath}/../../../../boards/Warp)
 ENDIF()
@@ -87,6 +89,51 @@ ENDIF()
 ADD_EXECUTABLE(Warp 
     "${ProjDirPath}/../../../../platform/utilities/src/fsl_misc_utilities.c"
     "${ProjDirPath}/../../../../platform/startup/MKL03Z4/gcc/startup_MKL03Z4.S"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/include/FTFx_KX_flash_config.h"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_FTFx.h"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_FTFx_Common.h"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_FTFx_Internal.h"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_Types.h"
+    "${ProjDirPath}/../../src/flash.h"
+    "${ProjDirPath}/../../../../platform/drivers/src/i2c/fsl_i2c_irq.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/spi/fsl_spi_irq.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/lpuart/fsl_lpuart_irq.c"
+    "${ProjDirPath}/../../../../platform/startup/MKL03Z4/system_MKL03Z4.c"
+    "${ProjDirPath}/../../../../platform/startup/startup.c"
+    "${ProjDirPath}/../../../../platform/startup/startup.h"
+    "${ProjDirPath}/../../../../boards/Warp/gpio_pins.c"
+    "${ProjDirPath}/../../../../boards/Warp/gpio_pins.h"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c"
+    "${ProjDirPath}/../../../../platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c"
     "${ProjDirPath}/../../src/boot.c"
     "${ProjDirPath}/../../src/errstrsEN.c"
     "${ProjDirPath}/../../src/powermodes.c"
@@ -117,14 +164,6 @@ ADD_EXECUTABLE(Warp
 #   "${ProjDirPath}/../../src/devMAX11300.c
     "${ProjDirPath}/../../src/SEGGER_RTT.c"
     "${ProjDirPath}/../../src/SEGGER_RTT_printf.c"
-    "${ProjDirPath}/../../../../platform/drivers/src/i2c/fsl_i2c_irq.c"
-    "${ProjDirPath}/../../../../platform/drivers/src/spi/fsl_spi_irq.c"
-    "${ProjDirPath}/../../../../platform/drivers/src/lpuart/fsl_lpuart_irq.c"
-    "${ProjDirPath}/../../../../platform/startup/MKL03Z4/system_MKL03Z4.c"
-    "${ProjDirPath}/../../../../platform/startup/startup.c"
-    "${ProjDirPath}/../../../../platform/startup/startup.h"
-    "${ProjDirPath}/../../../../boards/Warp/gpio_pins.c"
-    "${ProjDirPath}/../../../../boards/Warp/gpio_pins.h"
 )
 SET_TARGET_PROPERTIES(Warp PROPERTIES OUTPUT_NAME "Warp.elf")
 

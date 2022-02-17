@@ -64,10 +64,11 @@
 #include "SEGGER_RTT.h"
 #include "devSSD1331.h"
 #include "devAdafruitBLEUARTFriend.h"
+#include "flash.h"
 
-#define							kWarpConstantStringI2cFailure		"\rI2C failed, reg 0x%02x, code %d\n"
-#define							kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
-#define							kWarpConstantStringErrorSanity		"\rSanity check failed!"
+#define	kWarpConstantStringI2cFailure		    "\rI2C failed, reg 0x%02x, code %d\n"
+#define	kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
+#define	kWarpConstantStringErrorSanity		    "\rSanity check failed!"
 
 #if (WARP_BUILD_ENABLE_DEVADXL362)
 	#include "devADXL362.h"
@@ -1987,41 +1988,322 @@ main(void)
 	#endif
 
     int i;
-    char textPrinted[kWarpSizesUartBufferBytes];
-    devSSD1331init(); // Call the initialisation code
-    while(1) {
-        memset(textPrinted, '\0', kWarpSizesUartBufferBytes);
-        enableUARTPins();
-        initBLE();
-        if (lpUARTStatus = kStatus_LPUART_Success) {
-            warpPrint("LPUART successfully receives message\n");
-        } else {
-            warpPrint("LPUART fails to receive message\n");
-        }
-        if (deviceBLEState.uartRXBuffer[0] != kWarpMiscMarkerForAbsentByte) {
-            warpPrint("Received message in char: ");
-            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                if (deviceBLEState.uartRXBuffer[i] != kWarpMiscMarkerForAbsentByte) {
-                    warpPrint("%c", deviceBLEState.uartRXBuffer[i]);
-                    textPrinted[i] = deviceBLEState.uartRXBuffer[i];
-                }
-            }
-            warpPrint("\n");
-            printText(textPrinted);
-            warpPrint("Received message in int: ");
-            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%d-", deviceBLEState.uartRXBuffer[i]);
-            }
-            warpPrint("\n");
-            warpPrint("Received message in hex: ");
-            for (i = 0; i<kWarpSizesUartBufferBytes; i++) {
-                warpPrint("%x-", deviceBLEState.uartRXBuffer[i]);
-            }
-            warpPrint("\n");
-            warpPrint("--------------");
-        }
-        disableUARTpins();
+
+    /**************************************************************************
+    *                               FlashInit()                               *
+    * Setup flash SSD structure for device and initialize variables           *
+    ***************************************************************************/
+    flash_ret = FlashInit(&flashSSDConfig);
+    if (FTFx_OK != flash_ret)
+    {
+        ErrorTrap(flash_ret);
     }
+
+    /****************************************/
+    /* print welcome message for flash demo */
+    /****************************************/
+    warpPrint("\r\n\r\n\r\n*****************************************************************");
+    warpPrint("\r\n*\t\tWelcome to the Flash Demo!");
+    warpPrint("\r\n*");
+    warpPrint("\r\n*  This demo will erase and program different regions of ");
+    warpPrint("\r\n*  flash memory, and perform flash swap if it is supported. ");
+    warpPrint("\r\n*");
+
+    /***************************************************************/
+    /* Print flash information - PFlash, DFlash, EEE if they exist */
+    /***************************************************************/
+    warpPrint("\r\n*\tFlash Information: \r\n-----------------------------------------------------------------");
+    warpPrint("\r\n*\tTotal Flash Size:\t%d KB, Hex: (0x%x)", (P_FLASH_SIZE/ONE_KB), P_FLASH_SIZE);
+    warpPrint("\r\n*\tFlash Sector Size:\t%d KB, Hex: (0x%x)", (FTFx_PSECTOR_SIZE/ONE_KB), FTFx_PSECTOR_SIZE);
+    warpPrint("\r\n*");
+
+    /*************************************/
+    /* Does DFlash exist on this device? */
+    /*************************************/
+    if (flashSSDConfig.DFlashSize)
+    {
+        warpPrint("\r\n*\tData Flash Size:\t%d KB,\tHex: (0x%x)", (int)(flashSSDConfig.DFlashSize/ONE_KB), (unsigned int)flashSSDConfig.DFlashSize);
+        warpPrint("\r\n*\tData Flash Base Address:\t0x%x", (unsigned int)flashSSDConfig.DFlashBase);
+    }
+    else
+    {
+        warpPrint("\r\n*\tNo D-Flash (FlexNVM) Present on this Device...");
+    }
+
+    /******************************************/
+    /* Does FlexMemory Exist on this device ? */
+    /******************************************/
+    if (flashSSDConfig.EEESize)
+    {
+        warpPrint("\r\n*\tEnhanced EEPROM (EEE) Block Size:\t%d KB,\tHex: (0x%x)", (int)(flashSSDConfig.EEESize/ONE_KB), (unsigned int)flashSSDConfig.EEESize);
+        warpPrint("\r\n*\tEnhanced EEPROM (EEE) Base Address:\t0x%x", (unsigned int)flashSSDConfig.EERAMBase);
+    }
+    else
+    {
+        warpPrint("\r\n*\tNo Enhanced EEPROM (EEE) Present on this Device...");
+    }
+
+    /**************************************/
+    /* Is Swap Supported on this device ? */
+    /**************************************/
+#if (defined(SWAP_M))
+
+    warpPrint("\r\n*\tSwap is Supported on this Device...");
+
+#else
+
+    warpPrint("\r\n*\tSwap is NOT Supported on this Device...");
+
+#endif
+
+    warpPrint("\r\n*****************************************************************");
+
+    warpPrint("\r\n\r\n....................Now Running Demo.............................\r\n");
+
+    /*********************************************/
+    /* END: print welcome message for flash demo */
+    /*********************************************/
+
+    /**************************************************************************
+      * Set CallBack to callback function
+    ***************************************************************************/
+    flashSSDConfig.CallBack = (PCALLBACK)RelocateFunction((uint32_t)__ram_for_callback , CALLBACK_SIZE , (uint32_t)callback);
+    g_FlashLaunchCommand = (pFLASHCOMMANDSEQUENCE)RelocateFunction((uint32_t)__ram_func , LAUNCH_CMD_SIZE ,(uint32_t)FlashCommandSequence);
+
+    /**************************************************************************
+    *       Erase only select areas because we are running from Flash
+    ***************************************************************************/
+
+    /**************************************************************************
+    ***************************************************************************
+    *       Demo:   FlashEraseSector()  and FlashVerifySection()              *
+    ***************************************************************************
+    ***************************************************************************/
+    /* Debug message for user */
+    warpPrint("\r\n\r\n---->Demo: Running FlashEraseSector() and FlashVerifySection()...");
+
+    /************************************************************************/
+    /* Erase several sectors on upper pflash block where there is no code */
+    /************************************************************************/
+    flash_destination = flashSSDConfig.PFlashBase + (flashSSDConfig.PFlashSize - 6*FTFx_PSECTOR_SIZE);
+    flash_end = flash_destination + 3*FTFx_PSECTOR_SIZE;    /* erase and program two sectors */
+    while ((flash_destination + (FTFx_PSECTOR_SIZE)) < flash_end)
+    {
+        flash_size = FTFx_PSECTOR_SIZE;
+        flash_ret = FlashEraseSector(&flashSSDConfig, flash_destination, flash_size, g_FlashLaunchCommand);
+        if (FTFx_OK != flash_ret)
+        {
+            ErrorTrap(flash_ret);
+        }
+
+        /* Verify section for several sector of PFLASH */
+        flash_number = FTFx_PSECTOR_SIZE/FSL_FEATURE_FLASH_PFLASH_SECTION_CMD_ADDRESS_ALIGMENT;
+        for(flash_margin_read_level = 0; flash_margin_read_level < 0x2; flash_margin_read_level++)
+        {
+            flash_ret = FlashVerifySection(&flashSSDConfig, flash_destination, flash_number, flash_margin_read_level, g_FlashLaunchCommand);
+            if (FTFx_OK != flash_ret)
+            {
+                ErrorTrap(flash_ret);
+            }
+        }
+
+        /* print message for user */
+        warpPrint("\r\n\tDemo:  Successfully Erased Sector 0x%x -> 0x%x", (unsigned int)flash_destination, (unsigned int)(flash_destination+flash_size));
+
+        flash_destination += (flash_size);
+    }
+
+    /**************************************************************************
+    *                          FlashGetSecurityState()                        *
+    ***************************************************************************/
+    flash_securityStatus = 0x0;
+    flash_ret = FlashGetSecurityState(&flashSSDConfig, &flash_securityStatus);
+
+    if (FTFx_OK != flash_ret)
+    {
+        ErrorTrap(flash_ret);
+    }
+
+    /**************************************************
+        Message to user on flash security state
+        #define FLASH_NOT_SECURE                   0x01
+        #define FLASH_SECURE_BACKDOOR_ENABLED      0x02
+        #define FLASH_SECURE_BACKDOOR_DISABLED     0x04
+    ****************************************************/
+    switch(flash_securityStatus)
+    {
+        case FLASH_NOT_SECURE:
+        default:
+            warpPrint("\r\n\r\n---->Flash is UNSECURE!");
+            break;
+        case FLASH_SECURE_BACKDOOR_ENABLED:
+            warpPrint("\r\n\r\n---->Flash is SECURE, BACKDOOR is ENABLED!");
+            break;
+        case FLASH_SECURE_BACKDOOR_DISABLED:
+            warpPrint("\r\n\r\n---->Flash is SECURE, BACKDOOR is DISABLED!");
+            break;
+    }
+
+    /**************************************************************************
+     *                          FlashReadResource()                            *
+     ***************************************************************************/
+    /* Read on P-Flash */
+    flash_destination = flashSSDConfig.PFlashBase + PFLASH_IFR; /* Start address of Program Once Field */
+    flash_ret = FlashReadResource(&flashSSDConfig, flash_destination, DataArray, 0x0, g_FlashLaunchCommand);
+
+    if (FTFx_OK != flash_ret)
+    {
+        ErrorTrap(flash_ret);
+    }
+
+    /* Message to user */
+    flash_p_data = (uint32_t *)&DataArray;
+    warpPrint("\r\n\r\n---->Reading flash IFR @ location 0x%x: 0x%x", (unsigned int)flash_destination, (unsigned int)(*flash_p_data));
+
+#if (defined(SWAP_M))
+
+    /* program application data if we have not yet initialized the device */
+      /************************************************************************
+      *
+      *
+      *       Copy (program) Lower block to Upper block so we can swap
+      *
+      *       Example:
+      *           K64F:   Swap is supported
+      *                   Lower block: 0x0000 -> 0x8000
+      *                   Upper block: 0x8000 -> 0x1_0000
+      *           K22F:   Swap is NOT supported
+      *
+      *       Details:
+      *
+      *     Swap allows either half of program flash to exist at relative
+      *     address 0x0000.  So, different applicaton code can run out of reset,
+      *     following a swap.  The Swap command must run from SRAM to avoid
+      *     read-while-write errors when running from Flash.
+      *     The application can still run from Flash, but launching the
+      *     command (clearing CCIF bit) must be executed from SRAM.
+      *
+      */
+      /************************************************************************/
+    /* Message to user */
+    warpPrint("\r\n\r\n................ Swapping Flash Blocks! ..........................\r\n");
+    warpPrint("\r\n\r\n---->Application after the last reset...");
+    print_swap_application_data();
+    /* Run Swap */
+    flash_ret = flash_swap();
+    if (FTFx_OK == flash_ret)
+    {
+    warpPrint("\r\n\r\n---->Flash Swap Demo Success!<----");
+    print_swap_application_data();
+    warpPrint("\r\n\r\n---->Application data will swap locations after next reset...");
+    }
+    else
+    {
+          warpPrint("\r\n\r\n....Flash Swap Demo Failed!  Check hardware and/or software!....");
+          ErrorTrap(flash_ret);
+    }
+#else  /* defined(SWAP_M) */
+
+    /********************************************************************
+    *   For devices without SWAP, program some data for demo purposes
+    *********************************************************************/
+    flash_destination = flashSSDConfig.PFlashBase + (flashSSDConfig.PFlashSize - 6*FTFx_PSECTOR_SIZE);
+    flash_end = flashSSDConfig.PFlashBase + (flashSSDConfig.PFlashSize - 4*FTFx_PSECTOR_SIZE);
+    for (i = 0; i < BUFFER_SIZE_BYTE; i++)
+    {
+        /* Set source buffer */
+        program_buffer[i] = i;
+    }
+    flash_size = BUFFER_SIZE_BYTE;
+
+    /* message for user */
+    warpPrint("\r\n\r\n---->Running FlashProgram() and FlashProgramCheck()...");
+
+    while ((flash_destination + (flash_size)) < flash_end)
+    {
+        flash_ret = FlashProgram(&flashSSDConfig,flash_destination, flash_size, \
+                                       program_buffer, g_FlashLaunchCommand);
+        if (FTFx_OK != flash_ret)
+        {
+            ErrorTrap(flash_ret);
+        }
+
+        /* Program Check user margin levels*/
+        for (flash_margin_read_level = 1; flash_margin_read_level < 0x2; flash_margin_read_level++)
+        {
+            flash_ret = FlashProgramCheck(&flashSSDConfig, flash_destination, flash_size, program_buffer, \
+                                        &FailAddr, flash_margin_read_level, g_FlashLaunchCommand);
+            if (FTFx_OK != flash_ret)
+            {
+                ErrorTrap(flash_ret);
+            }
+        }
+
+        warpPrint("\r\n\tSuccessfully Programmed and Verified Location 0x%x -> 0x%x", (unsigned int)flash_destination, (unsigned int)(flash_destination + flash_size));
+
+        flash_destination += (BUFFER_SIZE_BYTE);
+    }
+
+#endif /* defined(SWAP) */
+
+    /* Message to user */
+    warpPrint("\r\n\r\n\r\n*****************************************************************");
+    warpPrint("\r\n            Flash Demo Complete!            ");
+    warpPrint("\r\n*****************************************************************");
+
+    while(1);
+}
+
+/*********************************************************************
+*
+*  Function Name    : ErrorTrap
+*  Description      : Gets called when an error occurs.
+*  Arguments        : uint32_t
+*  Return Value     :
+*
+*********************************************************************/
+void ErrorTrap(uint32_t flash_ret)
+{
+    warpPrint("\r\n\r\n\r\n\t---- HALTED DUE TO FLASH ERROR! ----");
+    while (1)
+    {
+        ;
+    }
+}
+
+/*********************************************************************
+*
+*  Function Name    : callback
+*  Description      : callback function for flash operations
+*  Arguments        : none
+*  Return Value     :
+*
+*********************************************************************/
+void callback(void)
+{
+    /* Should not use global variable for functions which need to be
+     * relocated such as callback function. If used, some compiler
+     * such as KEIL will be failed in all flash functions and
+     * the bus error will be triggered.
+     */
+}
+
+uint32_t SIZE_OPTIMIZATION RelocateFunction(uint32_t dest, uint32_t size, uint32_t src)
+{
+uint32_t temp;
+uint16_t value, i, *pSrc, *pDest;
+temp = PGM2DATA((uint32_t)src - LAUNCH_COMMAND_OFFSET);
+pSrc = (uint16_t *)temp;
+pDest = (uint16_t *)dest;
+temp = size >>1;
+for (i = 0x0U; i < temp; i++)
+{
+value = READ16(pSrc);
+pSrc++;
+WRITE16(pDest, value);
+pDest++;
+}
+return ((uint32_t)DATA2PGM((uint32_t)dest + LAUNCH_COMMAND_OFFSET));
 }
 
 void
