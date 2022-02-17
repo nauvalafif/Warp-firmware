@@ -45,7 +45,7 @@ warp:
 	cp src/boot/ksdk1.1.0/devSSD1331.*			    build/ksdk1.1/work/demos/Warp/src/
 	cp src/boot/ksdk1.1.0/devINA219.*			    build/ksdk1.1/work/demos/Warp/src/
 	cp src/boot/ksdk1.1.0/devAdafruitBLEUARTFriend.*	build/ksdk1.1/work/demos/Warp/src/
-	cp src/boot/ksdk1.1.0/sdep.h			    	build/ksdk1.1/work/demos/Warp/src/
+	cp src/boot/ksdk1.1.0/flash.h			    	build/ksdk1.1/work/demos/Warp/src/
 	cd build/ksdk1.1/work/lib/ksdk_platform_lib/armgcc/KL03Z4 && ./clean.sh; ./build_release.sh
 	cd build/ksdk1.1/work/demos/Warp/armgcc/Warp && ./clean.sh; ./build_release.sh
 	@echo "\n\nNow, run\n\n\tmake load-warp\n\n"
