@@ -174,16 +174,26 @@ uint8_t  flash_securityStatus;       /* Return protection status */
 uint16_t flash_number;               /* Number of longword or phrase to be program or verify*/
 uint32_t *flash_p_data;
 uint32_t flash_margin_read_level;    /* 0=normal, 1=user - margin read for reading 1's */
+uint8_t DataArray[PGM_SIZE_BYTE];
 uint8_t program_buffer[BUFFER_SIZE_BYTE];
 pFLASHCOMMANDSEQUENCE g_FlashLaunchCommand = (pFLASHCOMMANDSEQUENCE)0xFFFFFFFF;
+/* array to copy __Launch_Command func to RAM */
+uint16_t __ram_func[LAUNCH_CMD_SIZE/2];
+uint16_t __ram_for_callback[CALLBACK_SIZE/2]; /* length of this array depends on total size of the functions need to be copied to RAM*/
+
+
+#if (!defined(SWAP_M))
+uint32_t FailAddr;
+#endif
+gCallBackCnt = 0;
 
 /************************************************************/
 /* prototypes                                               */
 /************************************************************/
 void callback(void);
-extern uint32_t RelocateFunction(uint32_t dest, uint32_t size, uint32_t src);
+uint32_t RelocateFunction(uint32_t dest, uint32_t size, uint32_t src);
 void print_welcome_message(void);
-void ErrorTrap(uint32_t ret);
+void ErrorTrap(uint32_t flash_ret);
 
 #if (defined(SWAP_M))
 uint32_t flash_swap(void);
