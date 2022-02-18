@@ -1989,6 +1989,7 @@ main(void)
 
     int i;
 
+
     /**************************************************************************
     *                               FlashInit()                               *
     * Setup flash SSD structure for device and initialize variables           *
@@ -2286,24 +2287,6 @@ void callback(void)
      * such as KEIL will be failed in all flash functions and
      * the bus error will be triggered.
      */
-}
-
-uint32_t SIZE_OPTIMIZATION RelocateFunction(uint32_t dest, uint32_t size, uint32_t src)
-{
-uint32_t temp;
-uint16_t value, i, *pSrc, *pDest;
-temp = PGM2DATA((uint32_t)src - LAUNCH_COMMAND_OFFSET);
-pSrc = (uint16_t *)temp;
-pDest = (uint16_t *)dest;
-temp = size >>1;
-for (i = 0x0U; i < temp; i++)
-{
-value = READ16(pSrc);
-pSrc++;
-WRITE16(pDest, value);
-pDest++;
-}
-return ((uint32_t)DATA2PGM((uint32_t)dest + LAUNCH_COMMAND_OFFSET));
 }
 
 void
