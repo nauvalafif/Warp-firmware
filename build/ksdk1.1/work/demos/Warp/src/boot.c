@@ -2217,6 +2217,8 @@ main(void)
     }
     flash_size = BUFFER_SIZE_BYTE;
 
+    warpPrint("\nProgram buffer if directly printed is 0x%x", program_buffer);
+
     /* message for user */
     warpPrint("\r\n\r\n---->Running FlashProgram() and FlashProgramCheck()...");
 
