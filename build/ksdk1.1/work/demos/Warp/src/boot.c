@@ -2242,6 +2242,17 @@ main(void)
 
         warpPrint("\r\n\tSuccessfully Programmed and Verified Location 0x%x -> 0x%x", (unsigned int)flash_destination, (unsigned int)(flash_destination + flash_size));
 
+        flash_ret = FlashReadResource(&flashSSDConfig, flash_destination, DataArray, 0x0, g_FlashLaunchCommand);
+
+        if (FTFx_OK != flash_ret)
+        {
+            ErrorTrap(flash_ret);
+        }
+
+        /* Message to user */
+        flash_p_data = (uint32_t *)&DataArray;
+        warpPrint("\r\n\r\n---->Reading flash IFR @ location 0x%x: 0x%x", (unsigned int)flash_destination, (unsigned int)(*flash_p_data));
+
         flash_destination += (BUFFER_SIZE_BYTE);
     }
 
