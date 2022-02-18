@@ -2160,52 +2160,8 @@ main(void)
     flash_p_data = (uint32_t *)&DataArray;
     warpPrint("\r\n\r\n---->Reading flash IFR @ location 0x%x: 0x%x", (unsigned int)flash_destination, (unsigned int)(*flash_p_data));
 
-#if (defined(SWAP_M))
-
-    /* program application data if we have not yet initialized the device */
-      /************************************************************************
-      *
-      *
-      *       Copy (program) Lower block to Upper block so we can swap
-      *
-      *       Example:
-      *           K64F:   Swap is supported
-      *                   Lower block: 0x0000 -> 0x8000
-      *                   Upper block: 0x8000 -> 0x1_0000
-      *           K22F:   Swap is NOT supported
-      *
-      *       Details:
-      *
-      *     Swap allows either half of program flash to exist at relative
-      *     address 0x0000.  So, different applicaton code can run out of reset,
-      *     following a swap.  The Swap command must run from SRAM to avoid
-      *     read-while-write errors when running from Flash.
-      *     The application can still run from Flash, but launching the
-      *     command (clearing CCIF bit) must be executed from SRAM.
-      *
-      */
-      /************************************************************************/
-    /* Message to user */
-    warpPrint("\r\n\r\n................ Swapping Flash Blocks! ..........................\r\n");
-    warpPrint("\r\n\r\n---->Application after the last reset...");
-    print_swap_application_data();
-    /* Run Swap */
-    flash_ret = flash_swap();
-    if (FTFx_OK == flash_ret)
-    {
-    warpPrint("\r\n\r\n---->Flash Swap Demo Success!<----");
-    print_swap_application_data();
-    warpPrint("\r\n\r\n---->Application data will swap locations after next reset...");
-    }
-    else
-    {
-          warpPrint("\r\n\r\n....Flash Swap Demo Failed!  Check hardware and/or software!....");
-          ErrorTrap(flash_ret);
-    }
-#else  /* defined(SWAP_M) */
-
     /********************************************************************
-    *   For devices without SWAP, program some data for demo purposes
+    program some data for demo purposes
     *********************************************************************/
     flash_destination = flashSSDConfig.PFlashBase + (flashSSDConfig.PFlashSize - 6*FTFx_PSECTOR_SIZE);
     flash_end = flashSSDConfig.PFlashBase + (flashSSDConfig.PFlashSize - 4*FTFx_PSECTOR_SIZE);
@@ -2243,13 +2199,6 @@ main(void)
 
         flash_destination += (BUFFER_SIZE_BYTE);
     }
-
-#endif /* defined(SWAP) */
-
-    /* Message to user */
-    warpPrint("\r\n\r\n\r\n*****************************************************************");
-    warpPrint("\r\n            Flash Demo Complete!            ");
-    warpPrint("\r\n*****************************************************************");
 
     while(1);
 }
