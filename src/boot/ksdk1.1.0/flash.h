@@ -41,7 +41,7 @@
 /* Size of function used for callback.  Change this depending on the size of your function */
 #define CALLBACK_SIZE           0x80
 
-#define BUFFER_SIZE_BYTE        0x80
+#define BUFFER_SIZE_BYTE        131
 
 #define FTFx_REG_BASE           0x40020000
 #define P_FLASH_BASE            0x00000000
