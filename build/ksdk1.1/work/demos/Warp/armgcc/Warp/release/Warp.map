@@ -2341,7 +2341,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
 .igot.plt       0x000000001fffff4c        0x0 load address 0x0000000000004094
  .igot.plt      0x000000001fffff4c        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.bss            0x000000001fffff4c      0x4b4 load address 0x0000000000004094
+.bss            0x000000001fffff4c      0x4b8 load address 0x0000000000004094
                 0x000000001fffff4c                . = ALIGN (0x4)
                 0x000000001fffff4c                __START_BSS = .
                 0x000000001fffff4c                __bss_start__ = .
@@ -2407,63 +2407,63 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x00000000200001f8        0x4 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj
                 0x00000000200001f8                gWarpSleeptimeSeconds
  .bss.program_buffer
-                0x00000000200001fc       0x83 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj
+                0x00000000200001fc       0x88 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/boot.c.obj
                 0x00000000200001fc                program_buffer
- *fill*         0x000000002000027f        0x1 
  .bss._SEGGER_RTT
-                0x0000000020000280       0x78 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
-                0x0000000020000280                _SEGGER_RTT
+                0x0000000020000284       0x78 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
+                0x0000000020000284                _SEGGER_RTT
  .bss._acDownBuffer
-                0x00000000200002f8        0x4 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
+                0x00000000200002fc        0x4 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
  .bss._acUpBuffer
-                0x00000000200002fc       0x64 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
+                0x0000000020000300       0x64 CMakeFiles/Warp.dir/home/students/mrna2/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/SEGGER_RTT.c.obj
  .bss.g_freeTaskControlBlock
-                0x0000000020000360        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_os_abstraction_bm.c.obj)
+                0x0000000020000364        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_os_abstraction_bm.c.obj)
  .bss.g_taskControlBlockPool
-                0x0000000020000364       0x50 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_os_abstraction_bm.c.obj)
+                0x0000000020000368       0x50 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_os_abstraction_bm.c.obj)
  .bss.g_taskListHead
-                0x00000000200003b4       0x10 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_os_abstraction_bm.c.obj)
+                0x00000000200003b8       0x10 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_os_abstraction_bm.c.obj)
  .bss.g_clockState
-                0x00000000200003c4       0x10 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
+                0x00000000200003c8       0x10 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_clock_manager.c.obj)
  .bss.g_interruptDisableCount
-                0x00000000200003d4        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_interrupt_manager.c.obj)
-                0x00000000200003d4                g_interruptDisableCount
+                0x00000000200003d8        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_interrupt_manager.c.obj)
+                0x00000000200003d8                g_interruptDisableCount
  .bss.gPowerManagerState
-                0x00000000200003d8       0x10 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_power_manager.c.obj)
+                0x00000000200003dc       0x10 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_power_manager.c.obj)
  .bss.g_i2cStatePtr
-                0x00000000200003e8        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_i2c_common.c.obj)
-                0x00000000200003e8                g_i2cStatePtr
+                0x00000000200003ec        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_i2c_common.c.obj)
+                0x00000000200003ec                g_i2cStatePtr
  .bss.g_lpuartStatePtr
-                0x00000000200003ec        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_lpuart_common.c.obj)
-                0x00000000200003ec                g_lpuartStatePtr
+                0x00000000200003f0        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_lpuart_common.c.obj)
+                0x00000000200003f0                g_lpuartStatePtr
  .bss.g_xtal0ClkFreq
-                0x00000000200003f0        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_mcglite_hal.c.obj)
-                0x00000000200003f0                g_xtal0ClkFreq
- .bss.g_xtalRtcClkFreq
                 0x00000000200003f4        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_mcglite_hal.c.obj)
-                0x00000000200003f4                g_xtalRtcClkFreq
+                0x00000000200003f4                g_xtal0ClkFreq
+ .bss.g_xtalRtcClkFreq
+                0x00000000200003f8        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_mcglite_hal.c.obj)
+                0x00000000200003f8                g_xtalRtcClkFreq
  .bss.g_spiStatePtr
-                0x00000000200003f8        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_spi_shared_function.c.obj)
-                0x00000000200003f8                g_spiStatePtr
+                0x00000000200003fc        0x4 ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a(fsl_spi_shared_function.c.obj)
+                0x00000000200003fc                g_spiStatePtr
  *(COMMON)
- COMMON         0x00000000200003fc        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
-                0x00000000200003fc                errno
-                0x0000000020000400                . = ALIGN (0x4)
-                0x0000000020000400                __bss_end__ = .
-                0x0000000020000400                __END_BSS = .
+ COMMON         0x0000000020000400        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                0x0000000020000400                errno
+                0x0000000020000404                . = ALIGN (0x4)
+                0x0000000020000404                __bss_end__ = .
+                0x0000000020000404                __END_BSS = .
 
-.heap           0x0000000020000400        0x0
-                0x0000000020000400                . = ALIGN (0x8)
-                0x0000000020000400                __end__ = .
-                0x0000000020000400                PROVIDE (end = .)
-                0x0000000020000400                __HeapBase = .
-                0x0000000020000400                . = (. + HEAP_SIZE)
-                0x0000000020000400                __HeapLimit = .
+.heap           0x0000000020000404        0x4 load address 0x000000000000454c
+                0x0000000020000408                . = ALIGN (0x8)
+ *fill*         0x0000000020000404        0x4 
+                0x0000000020000408                __end__ = .
+                0x0000000020000408                PROVIDE (end = .)
+                0x0000000020000408                __HeapBase = .
+                0x0000000020000408                . = (. + HEAP_SIZE)
+                0x0000000020000408                __HeapLimit = .
 
-.stack          0x0000000020000400      0x200 load address 0x0000000000004548
-                0x0000000020000400                . = ALIGN (0x8)
-                0x0000000020000600                . = (. + STACK_SIZE)
- *fill*         0x0000000020000400      0x200 
+.stack          0x0000000020000408      0x200 load address 0x0000000000004550
+                0x0000000020000408                . = ALIGN (0x8)
+                0x0000000020000608                . = (. + STACK_SIZE)
+ *fill*         0x0000000020000408      0x200 
                 0x0000000020000600                __StackTop = (ORIGIN (m_data) + LENGTH (m_data))
                 0x0000000020000400                __StackLimit = (__StackTop - STACK_SIZE)
                 0x0000000020000600                PROVIDE (__stack = __StackTop)
@@ -2637,7 +2637,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x0000000000000da6       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
  .ARM.attributes
                 0x0000000000000dd2       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
-                0x0000000000000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data overflowed with stack and heap)
+                0x0000000000000000                ASSERT ((__StackLimit >= __HeapLimit), region m_data overflowed with stack and heap)
 OUTPUT(release/Warp.elf elf32-littlearm)
 LOAD linker stubs
 
