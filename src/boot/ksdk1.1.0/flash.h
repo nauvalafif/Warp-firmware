@@ -185,7 +185,7 @@ uint16_t __ram_for_callback[CALLBACK_SIZE/2]; /* length of this array depends on
 #if (!defined(SWAP_M))
 uint32_t FailAddr;
 #endif
-gCallBackCnt = 0;
+int gCallBackCnt = 0;
 
 /************************************************************/
 /* prototypes                                               */
