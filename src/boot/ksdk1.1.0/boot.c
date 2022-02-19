@@ -2256,7 +2256,9 @@ main(void)
 
         /* Message to user */
         flash_p_data = (uint32_t *)&DataArray;
-        warpPrint("\r\n\r\n---->Reading flash IFR @ location 0x%x: 0x%x", (unsigned int)flash_destination, (unsigned int)(*flash_p_data));
+        warpPrint("\r\n\r\n---->Reading flash IFR *flash_p_data @ location 0x%x: 0x%x", (unsigned int)flash_destination, (unsigned int)(*flash_p_data));
+        warpPrint("\r\n\r\n---->Reading flash IFR flash_p_data @ location 0x%x: 0x%x", (unsigned int)flash_destination, flash_p_data);
+        warpPrint("\r\n\r\n---->Reading flash IFR &flash_p_data @ location 0x%x: 0x%x", (unsigned int)flash_destination, &flash_p_data);
 
         flash_destination += (BUFFER_SIZE_BYTE);
     }
