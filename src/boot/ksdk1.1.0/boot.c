@@ -2214,10 +2214,13 @@ main(void)
     {
         /* Set source buffer */
         program_buffer[i] = i;
+        warpPrint("\nProgram buffer[%d] is %d", i, program_buffer[i]);
     }
     flash_size = BUFFER_SIZE_BYTE;
 
-    warpPrint("\nProgram buffer if directly printed is 0x%x", program_buffer);
+    warpPrint("\nprogram_buffer if directly printed is 0x%x", program_buffer);
+    warpPrint("\n&program_buffer if directly printed is 0x%x", &program_buffer);
+    warpPrint("\n*program_buffer if directly printed is 0x%x", *program_buffer);
 
     /* message for user */
     warpPrint("\r\n\r\n---->Running FlashProgram() and FlashProgramCheck()...");
