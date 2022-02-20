@@ -43,13 +43,11 @@ void enableUARTPins(void)
      *	Setup:
      *		PTB3/kWarpPinI2C0_SCL_UART_TX for UART TX
      *		PTB4/kWarpPinI2C0_SCL_UART_RX for UART RX
-     *		PTA7/kWarpPinSPI_MOSI_UART_CTS for UART CTS
+     *		CTS is not set but just grounded
      */
 
-    PORT_HAL_SetMuxMode(PORTB_BASE, 3, kPortMuxAlt3);
-    PORT_HAL_SetMuxMode(PORTB_BASE, 4, kPortMuxAlt3);
-    PORT_HAL_SetMuxMode(PORTA_BASE, 7, kPortMuxAsGpio);
-    GPIO_DRV_ClearPinOutput(kWarpPinSPI_MOSI_UART_CTS);
+    PORT_HAL_SetMuxMode(PORTB_BASE, 3, kPortMuxAlt3); // UART TX connected to BLE RX
+    PORT_HAL_SetMuxMode(PORTB_BASE, 4, kPortMuxAlt3); // UART RX connected to BLE TX
 
     /*
      *	Initialize UART0.
@@ -99,8 +97,6 @@ void disableUARTpins(void)
 
     PORT_HAL_SetMuxMode(PORTB_BASE, 3, kPortPinDisabled);
     PORT_HAL_SetMuxMode(PORTB_BASE, 4, kPortPinDisabled);
-    PORT_HAL_SetMuxMode(PORTA_BASE, 7, kPortMuxAsGpio);
-    GPIO_DRV_ClearPinOutput(kWarpPinSPI_MOSI_UART_CTS);
 
     /*
      *	Disable LPUART CLOCK
