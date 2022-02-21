@@ -17,8 +17,11 @@ Configuration file for SEGGER Real-Time Terminal interface. You can increase the
 ##### `SEGGER_RTT_printf.c`
 Implementation of the SEGGER Real-Time Terminal interface formatted I/O routines. Do not modify.
 
-##### `devAdafruitBLESPIFriend.*`
-Driver for Adafruit BLE SPI Friend.
+##### `devAdafruitBLEUARTFriend.*`
+Driver for Adafruit BLE UART Friend.
+
+##### `devSSD1331.*`
+Driver for SSD1331 OLED Display.
 
 ##### `devINA219.*`
 Driver for INA219.
